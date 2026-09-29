@@ -1,4 +1,6 @@
 import './styles.css';
+import './contact.css';
+import './contact';
 import './pwa';
 import { icon } from './core/ui';
 document.querySelectorAll<HTMLElement>('[data-icon]').forEach(el=>el.innerHTML=icon(el.dataset.icon!,Number(el.dataset.size)||22));

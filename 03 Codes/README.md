@@ -40,7 +40,7 @@ Les niveaux ne certifient pas le CECRL. La V1 est un parcours d’entraînement,
 
 Progression locale versionnée, validation des scores, dates et ordre des leçons. Sauvegarde JSON limitée à 1 Mo. Import et réinitialisation confirmés. Les chaînes sont échappées avant insertion dans l’interface. Les erreurs de stockage sont visibles. La leçon en cours reste dans `sessionStorage`, les scores terminés dans `localStorage`.
 
-Pas de collecte de progression, de compte ni de SMTP. Les fichiers de comptes et `.local` sont exclus de Git. Ne jamais déposer un jeton dans le code, un rapport ou une variable exposée au navigateur.
+Pas de collecte de progression ni de compte. En V1.1, le formulaire de contact transmet les coordonnées et le message à MORA Shawiri par SMTP sécurisé, uniquement sur soumission. Les fichiers de comptes et `.local` sont exclus de Git. Ne jamais déposer un jeton dans le code, un rapport ou une variable exposée au navigateur.
 
 ## PWA et mises à jour
 
@@ -50,9 +50,19 @@ L’audio dépend des voix disponibles sur l’appareil ; une transcription acce
 
 ## Déploiement Vercel
 
-Importer le dépôt en choisissant `03 Codes` comme Root Directory, `Vite`, build `npm run build`, sortie `dist`. La configuration de réécriture `/app` et les en-têtes sont dans `vercel.json`. Aucun secret applicatif n’est nécessaire.
+Importer le dépôt en choisissant `03 Codes` comme Root Directory, `Vite`, build `npm run build`, sortie `dist`. La configuration de réécriture `/app` et les en-têtes sont dans `vercel.json`. Configurer en variables chiffrées de production les huit clés de `.env.example` : SMTP et `CONTACT_FORM_SECRET` (32 octets aléatoires minimum). Aucun préfixe `VITE_` pour ces secrets.
 
-Une livraison statique des fichiers compilés est également possible via l’API Vercel. Le service worker est généré à chaque build ; ne pas modifier un fichier `dist` à la main. Si l’origine canonique change, adapter les métadonnées HTML, `robots.txt` et `sitemap.xml` avant de reconstruire.
+La V1.1 doit déployer les sources avec `api/contact.js`, `server/contact.mjs` et les dépendances Node : une livraison de `dist` seul ne fournit pas le formulaire. Le service worker est généré à chaque build ; il ne met jamais l’API en cache. Si l’origine canonique change, adapter les métadonnées HTML, la liste d’origines autorisées du formulaire, `robots.txt` et `sitemap.xml`.
+
+## Formulaire de contact V1.1
+
+`GET /api/contact` délivre un jeton signé valable une heure. `POST /api/contact` valide l’origine, le type JSON, les tailles, les champs et le piège anti-robot. Destinataire et expéditeur sont fixés côté serveur ; l’adresse du visiteur devient `Reply-To`. Le texte est envoyé sans HTML. Les erreurs SMTP restent confidentielles et ne sont jamais présentées comme une réussite. La limitation à trois demandes par IP sur dix minutes et la déduplication sont en mémoire par instance : elles ne constituent pas une protection distribuée. Pour un trafic important, ajouter une règle de limitation dans Vercel Firewall.
+
+`npm run dev` et `npm run preview` servent le client. L’API nécessite Vercel ou `vercel dev` avec les variables privées locales. Les tests de formulaire utilisent un transport simulé pour éviter tout envoi involontaire. L’authentification SMTP se vérifie séparément avec `transporter.verify()` sans envoyer de message.
+
+## Visuels V1.1
+
+`node scripts/capture.mjs` génère cinq captures stratégiques depuis la production (origine remplaçable avec `TEST_BASE_URL`). `node scripts/posters.mjs` crée deux affiches 1080 × 1080 avec les logos officiels et ces captures. Les images du logo horizontal sont conservées telles quelles sur un support blanc, sans détourage ni déformation. `name`, `short_name` et le titre de l’outil sont `Speakora`. Un ancien raccourci peut attendre la mise à jour du navigateur ; exporter sa progression avant toute désinstallation qui effacerait les données.
 
 ## Ajouter du contenu
 
