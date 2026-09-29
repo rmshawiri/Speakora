@@ -1,0 +1,5 @@
+import fs from 'node:fs';import {pathToFileURL} from 'node:url';import {chromium} from '@playwright/test';
+if(!process.env.LIGHTHOUSE_MODULE)throw new Error('Set LIGHTHOUSE_MODULE to the installed lighthouse/core/index.js path.');
+const {default:lighthouse}=await import(pathToFileURL(process.env.LIGHTHOUSE_MODULE).href);
+const browser=await chromium.launch({headless:true,args:['--remote-debugging-port=9237']});
+try{const result=await lighthouse('https://speakora.morashawiri.com/',{port:9237,output:'json',logLevel:'error',onlyCategories:['performance','accessibility','best-practices','seo']});fs.writeFileSync('../05 Rapports/lighthouse-mobile-isolated.json',result.report);console.log(JSON.stringify({scores:Object.fromEntries(Object.entries(result.lhr.categories).map(([k,v])=>[k,v.score])),warnings:result.lhr.runWarnings,LCP:result.lhr.audits['largest-contentful-paint'].displayValue,TBT:result.lhr.audits['total-blocking-time'].displayValue,CLS:result.lhr.audits['cumulative-layout-shift'].displayValue}));}finally{await browser.close();}

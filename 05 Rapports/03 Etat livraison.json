@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-29T08:24:34.709Z",
+  "applicationCommit": "30ed1f7a30a46bbc750d2baa6ca376741cf1c772",
+  "deploymentId": "dpl_GcEWUt62MFdwPjMFUxQnepTofkQz",
+  "deploymentStatus": "READY",
+  "deploymentUrl": "https://speakora-duol99dnp-eq-shawiri.vercel.app",
+  "repository": "https://github.com/rmshawiri/Speakora",
+  "branch": "main",
+  "landing": "https://speakora.morashawiri.com/",
+  "application": "https://speakora.morashawiri.com/app",
+  "fluentFormsRedirect": "https://speakora.morashawiri.com/app",
+  "publicVercelBackup": "https://speakora-nu.vercel.app/",
+  "gitRemoteHead": "30ed1f7a30a46bbc750d2baa6ca376741cf1c772"
+}

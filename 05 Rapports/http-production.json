@@ -1,0 +1,114 @@
+[
+  {
+    "url": "https://speakora.morashawiri.com/",
+    "status": 200,
+    "finalUrl": "https://speakora.morashawiri.com/",
+    "bytes": 16668,
+    "title": "Speakora — Apprenez l’anglais à votre rythme, hors ligne",
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "csp": true
+  },
+  {
+    "url": "https://speakora.morashawiri.com/app",
+    "status": 200,
+    "finalUrl": "https://speakora.morashawiri.com/app",
+    "bytes": 910,
+    "title": "Mon parcours d’anglais — Speakora",
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "csp": true
+  },
+  {
+    "url": "https://speakora.morashawiri.com/manifest.webmanifest",
+    "status": 200,
+    "finalUrl": "https://speakora.morashawiri.com/manifest.webmanifest",
+    "bytes": 449,
+    "contentType": "application/manifest+json; charset=utf-8",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "csp": true
+  },
+  {
+    "url": "https://speakora.morashawiri.com/sw.js",
+    "status": 200,
+    "finalUrl": "https://speakora.morashawiri.com/sw.js",
+    "bytes": 1737,
+    "contentType": "application/javascript; charset=utf-8",
+    "cacheControl": "no-cache",
+    "csp": true
+  },
+  {
+    "url": "https://speakora.morashawiri.com/robots.txt",
+    "status": 200,
+    "finalUrl": "https://speakora.morashawiri.com/robots.txt",
+    "bytes": 92,
+    "contentType": "text/plain; charset=utf-8",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "csp": true
+  },
+  {
+    "url": "https://speakora.morashawiri.com/sitemap.xml",
+    "status": 200,
+    "finalUrl": "https://speakora.morashawiri.com/sitemap.xml",
+    "bytes": 163,
+    "contentType": "application/xml",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "csp": true
+  },
+  {
+    "url": "https://speakora-nu.vercel.app/",
+    "status": 200,
+    "finalUrl": "https://speakora-nu.vercel.app/",
+    "bytes": 16668,
+    "title": "Speakora — Apprenez l’anglais à votre rythme, hors ligne",
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "csp": true
+  },
+  {
+    "url": "https://speakora-nu.vercel.app/app",
+    "status": 200,
+    "finalUrl": "https://speakora-nu.vercel.app/app",
+    "bytes": 910,
+    "title": "Mon parcours d’anglais — Speakora",
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "csp": true
+  },
+  {
+    "url": "https://speakora-nu.vercel.app/manifest.webmanifest",
+    "status": 200,
+    "finalUrl": "https://speakora-nu.vercel.app/manifest.webmanifest",
+    "bytes": 449,
+    "contentType": "application/manifest+json; charset=utf-8",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "csp": true
+  },
+  {
+    "url": "https://speakora-nu.vercel.app/sw.js",
+    "status": 200,
+    "finalUrl": "https://speakora-nu.vercel.app/sw.js",
+    "bytes": 1737,
+    "contentType": "application/javascript; charset=utf-8",
+    "cacheControl": "no-cache",
+    "csp": true
+  },
+  {
+    "url": "https://speakora-nu.vercel.app/robots.txt",
+    "status": 200,
+    "finalUrl": "https://speakora-nu.vercel.app/robots.txt",
+    "bytes": 92,
+    "contentType": "text/plain; charset=utf-8",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "csp": true
+  },
+  {
+    "url": "https://speakora-nu.vercel.app/sitemap.xml",
+    "status": 200,
+    "finalUrl": "https://speakora-nu.vercel.app/sitemap.xml",
+    "bytes": 163,
+    "contentType": "application/xml",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "csp": true
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "url": "https://speakora.morashawiri.com/app",
+  "manifestErrors": [],
+  "installabilityErrors": [],
+  "browserErrors": [],
+  "offlineCache": {
+    "caches": [
+      "speakora-85c9b1ba8e43"
+    ],
+    "resources": [
+      "https://speakora.morashawiri.com/assets/main-Dbycrbzo.js",
+      "https://speakora.morashawiri.com/assets/app-C6ByrfNo.js",
+      "https://speakora.morashawiri.com/app/index.html",
+      "https://speakora.morashawiri.com/assets/pwa-crjHuoYU.css",
+      "https://speakora.morashawiri.com/assets/manrope-latin-wght-normal-DHIcAJRg.woff2",
+      "https://speakora.morashawiri.com/brand/icon-48.png",
+      "https://speakora.morashawiri.com/brand/icon-192.png",
+      "https://speakora.morashawiri.com/assets/pwa-DRHPzWlA.js",
+      "https://speakora.morashawiri.com/brand/icon-512.png",
+      "https://speakora.morashawiri.com/brand/logo.webp",
+      "https://speakora.morashawiri.com/brand/mora.png",
+      "https://speakora.morashawiri.com/brand/social.webp",
+      "https://speakora.morashawiri.com/manifest.webmanifest",
+      "https://speakora.morashawiri.com/robots.txt",
+      "https://speakora.morashawiri.com/index.html",
+      "https://speakora.morashawiri.com/sitemap.xml"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "origin": "https://speakora.morashawiri.com",
+  "checks": [
+    "Initial online precache and controller active",
+    "Browser process closed and restarted offline: application opens",
+    "First lesson completed offline with 70 XP",
+    "Second offline browser restart: 70 XP preserved"
+  ]
+}
