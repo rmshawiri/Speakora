@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-29T14:36:47.677Z",
+  "date": "2026-09-29T20:43:01.638Z",
   "origin": "https://speakora.morashawiri.com",
   "checks": [
     {
@@ -23,13 +23,5 @@
       "name": "cross origin",
       "status": 403
     }
-  ],
-  "liveEmail": {
-    "authorized": true,
-    "submissions": 1,
-    "status": 200,
-    "feedback": "Votre message a bien été transmis à MORA Shawiri. Merci pour votre retour !",
-    "acceptedBySMTP": true,
-    "inboxReceiptIndependentlyVerified": false
-  }
+  ]
 }

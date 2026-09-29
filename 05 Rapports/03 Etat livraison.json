@@ -1,9 +1,9 @@
 {
-  "date": "2026-09-29T15:21:45.502Z",
-  "applicationCommit": "9ae4b36c117bc522cd557677592f4e010fdc8d80",
-  "deploymentId": "dpl_DYZEPrYqPAnbAGoh4TycdKDLQjV8",
+  "date": "2026-09-29T20:48:10.196Z",
+  "applicationCommit": "9d655d7027e11f279b98640add6b94d9818095e9",
+  "deploymentId": "dpl_XPomrWHB2f9RAgrxswiNKjLGn4JT",
   "deploymentStatus": "READY",
-  "deploymentUrl": "https://speakora-9rjlmijcg-eq-shawiri.vercel.app",
+  "deploymentUrl": "https://speakora-7j8wpog8t-eq-shawiri.vercel.app",
   "repository": "https://github.com/rmshawiri/Speakora",
   "branch": "main",
   "landing": "https://speakora.morashawiri.com/",
@@ -13,9 +13,11 @@
   "version": "1.1.0",
   "contact": "https://speakora.morashawiri.com/#contact",
   "emailTemplate": "Centered premium HTML inline + text/plain",
-  "emailHTMLProductionTest": "accepted by SMTP, 2026-09-29T15:20:17.449Z",
+  "emailHTMLProductionTest": "Admin and visitor emails accepted by SMTP at 2026-09-29T20:39:06.973Z",
   "pwaName": "Speakora",
   "selectedScreenshots": 5,
   "campaignPosters": 2,
-  "gitRemoteHeadAtDeployment": "9ae4b36c117bc522cd557677592f4e010fdc8d80"
+  "gitRemoteHeadAtDeployment": "9d655d7027e11f279b98640add6b94d9818095e9",
+  "adminTemplateUnchanged": true,
+  "userConfirmationEmail": true
 }

@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-29T20:39:06.973Z",
+  "checks": [
+    {
+      "width": 760,
+      "overflow": false,
+      "externalRequests": 0
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "externalRequests": 0
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "externalRequests": 0
+    }
+  ],
+  "renderEngine": "Chromium — aperçu HTML, pas une capture Gmail/Outlook"
+}

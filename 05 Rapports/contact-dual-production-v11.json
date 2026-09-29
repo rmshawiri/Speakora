@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-29T20:39:24.740Z",
+  "origin": "https://speakora.morashawiri.com",
+  "formSubmissions": 1,
+  "emailsExpected": 2,
+  "status": 200,
+  "adminAcceptedBySMTP": true,
+  "confirmationAcceptedBySMTP": true,
+  "sentAt": "2026-09-29T20:39:06.973Z",
+  "screen": "Votre message a bien été transmis à MORA Shawiri. Un e-mail de confirmation vous a été envoyé. Notre équipe vous répondra dès que possible.",
+  "adminSubject": "[Speakora] Une idée ou un retour",
+  "userSubject": "Nous avons bien reçu votre message — Speakora",
+  "testRecipient": "contact@morashawiri.com",
+  "inboxReceiptIndependentlyVerified": false
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-29T20:48:10.202Z",
+  "applicationCommit": "9d655d7027e11f279b98640add6b94d9818095e9",
+  "deploymentId": "dpl_XPomrWHB2f9RAgrxswiNKjLGn4JT",
+  "unitAndServerTests": 23,
+  "localBrowserScenariosPassed": 12,
+  "productionBrowser": {
+    "origin": "https://speakora-nu.vercel.app",
+    "initial": {
+      "startTime": "2026-09-29T20:38:32.224Z",
+      "duration": 324298.08400000003,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "accessibilityRetry": {
+      "startTime": "2026-09-29T20:45:15.567Z",
+      "duration": 22506.654000000002,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "totalDistinctScenariosPassed": 12,
+    "note": "Initial accessibility navigation exceeded 60s; targeted retry passed. Original failure retained."
+  },
+  "canonicalChecks": [
+    "Real form submission: admin and visitor accepted by SMTP",
+    "API rejection cases 400/403",
+    "Six public routes HTTP 200",
+    "Offline browser restart and 70 XP persistence",
+    "Actual isolated PWA installation: Speakora, standalone",
+    "Five refreshed screenshots"
+  ],
+  "smtpFailureTest": "Real TCP SMTP 550 responses on controlled local server; not an induced production outage",
+  "mailInboxVerified": false,
+  "nativeMailClientRenderingVerified": false
+}

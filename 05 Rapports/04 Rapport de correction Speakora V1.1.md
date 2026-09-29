@@ -1,109 +1,93 @@
 # Speakora — rapport de correction V1.1
 
-Révision du 29 septembre 2026, réalisée à partir des demandes V1.1 et des captures CAP_R01, CAP_R02 et du raccourci installé. Ce rapport complète et remplace les constats V1 devenus obsolètes, notamment l’absence de formulaire SMTP et l’ancien jeu de captures.
+Livraison du 29 septembre 2026. Ce rapport remplace les constats V1 devenus obsolètes. L’e-mail admin approuvé est conservé sans modification ; la confirmation visiteur est un modèle séparé.
 
-## Livraison et adresses
+## Production et Git
 
-- Landing Page : https://speakora.morashawiri.com/
-- Contact : https://speakora.morashawiri.com/#contact
+- Site : https://speakora.morashawiri.com/
 - Application : https://speakora.morashawiri.com/app
+- Contact : https://speakora.morashawiri.com/#contact
 - Accès WordPress conservé : https://morashawiri.com/acceder-a-speakora/
-- Adresse Vercel publique de secours : https://speakora-nu.vercel.app/
-- Dépôt : https://github.com/rmshawiri/Speakora, branche `main`.
-- Référence du déploiement et du commit applicatif : `03 Etat livraison.json`.
+- Secours public : https://speakora-nu.vercel.app/
+- GitHub : https://github.com/rmshawiri/Speakora, branche `main`.
+- Commit applicatif final poussé : `9d655d7027e11f279b98640add6b94d9818095e9` — `feat: complete visitor confirmation and production verification`.
+- Déploiement Vercel : `dpl_XPomrWHB2f9RAgrxswiNKjLGn4JT`, état **READY**, associé aux deux domaines publics ci-dessus.
+- URL technique : https://speakora-7j8wpog8t-eq-shawiri.vercel.app (protection Vercel conservée).
 
-## 1. Formulaire de contact réellement connecté
+Les preuves et visuels sont enregistrés dans un commit documentaire suivant ce commit applicatif. Son identifiant est donné dans le récapitulatif final et dans l’historique Git. Aucun changement applicatif n’est intervenu après le déploiement vérifié.
 
-Une section Contact est intégrée à la Landing Page, avec son entrée de navigation, les coordonnées officielles, le nom, l’e-mail, le sujet et le message. Elle reste distincte de la page de capture WordPress. Tous les CTA d’accès conservent leur destination officielle.
+## Formulaire et deux e-mails
 
-Le formulaire transmet à une fonction Node Vercel `/api/contact`, puis à la messagerie SMTP fournie. Les huit variables nécessaires sont chiffrées et limitées à la production. Aucun mot de passe n’est inclus dans le client ni dans Git. Le destinataire et l’expéditeur sont fixés côté serveur ; le visiteur est placé en Reply-To. Le message est envoyé en HTML avec une version texte de secours.
+Le formulaire public utilise une fonction Node Vercel et le SMTP configuré côté serveur. Les secrets restent privés. Validation, limites de taille, liste de sujets autorisés, contrôle d’origine, jeton signé, piège anti-robot, limitation et déduplication sont actifs. Le bouton est désactivé pendant l’envoi ; les retours sont annoncés aux technologies d’assistance.
 
-Contrôles appliqués : validation serveur, limites de taille, sujets autorisés, refus des injections d’en-têtes, contrôle de l’origine, jeton signé expirant, piège anti-robot, déduplication et limitation des tentatives. La limitation et la déduplication sont locales à chaque instance, pas distribuées ; une règle Vercel Firewall supplémentaire serait appropriée en cas de trafic abusif important.
+Le succès nécessite l’acceptation SMTP du mail admin. Un refus admin retourne 502 : aucune confirmation visiteur n’est envoyée et le texte reste dans le formulaire. Si seul l’accusé de réception échoue, l’écran confirme la transmission de la demande mais signale clairement l’échec de la confirmation, sans inviter à renvoyer le formulaire. Hors ligne, une erreur explicite conserve le texte ; aucun envoi différé silencieux.
 
-En cas d’erreur ou de connexion absente, le texte reste dans le formulaire ouvert. Aucun envoi n’est mis en attente silencieusement. Le bouton est désactivé pendant l’envoi et le retour est annoncé aux technologies d’assistance. Le succès exige une acceptation SMTP.
+**Admin :** modèle centré validé inchangé, objet `[Speakora] {Sujet}`, expéditeur « Speakora — MORA Shawiri », Reply-To du visiteur. Son intégrité est contrôlée contre le commit approuvé `9ae4b36` dans `admin-template-validation.json`.
 
-**Vérification réelle :** authentification SMTP et TLS validés, puis un unique e-mail de test envoyé depuis le formulaire public après autorisation explicite. Réponse HTTP 200 et acceptation SMTP confirmées. La réception de ce premier test a été confirmée par l’utilisateur. Référence du message : `SPEAKORA-V11-CONTACT-20260929`. Preuves dans `contact-production-v11.json`.
+**Visiteur :** nouveau modèle HTML premium, largeur 640 px, en-tête violet/mauve centré, remerciement, confirmation, rappel du sujet, date, réponse dès que possible et signature Speakora / MORA Shawiri. Objet : « Nous avons bien reçu votre message — Speakora ». Reply-To officiel. Le contenu libre du visiteur n’est pas réexpédié dans cet accusé de réception. HTML à tableaux, styles inline, version texte, sans JavaScript ni CSS externe, avec solution de repli Outlook.
 
-## 2. Logo officiel et intégration
+**Test réel autorisé :** une seule soumission sur le domaine canonique, le 29 septembre à 23:39 aux Comores (20:39 UTC). HTTP 200 ; **les deux messages ont été acceptés par le SMTP**. L’adresse officielle `contact@morashawiri.com` a servi de visiteur de test : elle reçoit donc le mail admin et l’accusé visiteur. Le succès affiché confirme l’envoi de la confirmation. Preuve : `contact-dual-production-v11.json`, référence `SPEAKORA-V11-DEUX-EMAILS-20260929`.
 
-Le faux assemblage icône + texte HTML a été remplacé par le fichier horizontal officiel, dans la barre latérale desktop et le nouvel en-tête mobile. La Landing Page et son aperçu utilisent également ce fichier. La PWA charge la même interface corrigée.
+Les aperçus `Email V1.1/email-utilisateur-ordinateur.png`, `email-utilisateur-mobile.png` et le HTML utilisent la date de cet envoi réel. Ils sont des rendus Chromium du modèle, pas des captures d’une boîte de réception. Aucun débordement à 760, 390 et 320 px. La réception en boîte et le rendu natif Gmail/Outlook de ce dernier test n’ont pas été vérifiés indépendamment ; l’utilisateur avait confirmé le mail admin précédent.
 
-Les logos sont conservés sans détourage : leur fond blanc est intégré dans un support clair arrondi, y compris en thème sombre. Aucune recréation, recoloration, déformation ni suppression de détails. Le fichier horizontal publié est identique au fichier fourni. Les favicons et icônes 48/192/512 px sont dérivés uniquement du favicon officiel. L’icône du raccourci déjà installé a été extraite et contrôlée visuellement : il s’agit bien du symbole officiel.
+## Identité, PWA et présentation
 
-## 3. Nom et vérification PWA
+- Logos officiels conservés, proportions d’origine, sans recréation ni détourage approximatif. Support blanc net en mode sombre ; intégration dans la barre latérale, l’en-tête mobile et la landing.
+- Favicon et icônes 192/512 issus du visuel officiel ; manifest, `name`, `short_name` et titre de l’outil : **Speakora**.
+- Installation réelle Chromium dans un profil isolé, lancement en fenêtre autonome et titre Speakora vérifiés sur la production. Le raccourci Windows existant a également été renommé **Speakora**, sans suppression de progression ; son icône officielle a été inspectée. Preuves : `pwa-installed-v11.json`, `desktop-shortcut-v11.json`, `brand-assets-v11.json`.
+- Mode sombre de l’application : navigation, réglages, champs, cartes, boutons, textes, états correct/incorrect et branding contrôlés. La landing et son formulaire gardent la présentation claire de leur charte.
+- Résultat mobile compact, actions visibles, espaces et alignements ajustés ; navigation clavier et absence de débordement contrôlées de 320 à 1440 px.
 
-`name`, `short_name` et le titre de la page applicative sont **Speakora**. Le slogan reste utilisé dans les zones éditoriales, sans allonger le nom installé.
+## Hors ligne et progression
 
-Une installation réelle de la production a été effectuée dans un profil Chromium isolé : installation réussie, lancement en fenêtre autonome confirmé par `display-mode: standalone`, titre **Speakora**, logo officiel et aucune erreur d’installabilité. Cette installation de test a ensuite été désinstallée de son seul profil isolé. Preuves dans `pwa-installed-v11.json`.
+Après un premier chargement connecté, fermeture complète du navigateur puis redémarrage hors ligne : l’application s’ouvre, une leçon complète peut être terminée et les 70 XP restent présents après un second redémarrage hors ligne. Test refait sur le domaine canonique après le dernier déploiement (`offline-restart.json`). Le service worker est versionné et ne met jamais l’API de contact en cache.
 
-Le raccourci Chrome existant sur le bureau de cet ordinateur a été renommé **Speakora.lnk**, en préservant sa cible, son profil et son identifiant d’application. Aucune donnée de progression n’a été effacée. Preuve dans `desktop-shortcut-v11.json`.
+Les 15 leçons et 82 exercices sont parcourus dans les tests, avec les quatre formats, déblocages, plafond de 1 120 XP, reprise, import/export et confirmation de réinitialisation. Une révision n’attribue pas deux fois les mêmes XP. La progression reste locale à l’appareil.
 
-Sur d’autres appareils déjà équipés de l’ancienne version, le navigateur peut différer l’actualisation du nom. Fermer puis rouvrir l’application et accepter la mise à jour proposée. Le comportement d’installation Android/iOS n’a pas été vérifié sur des appareils physiques pendant cette révision.
+## Visuels livrés
 
-## 4. Mode sombre et mobile
+**Cinq captures stratégiques seulement**, rafraîchies depuis la production :
 
-Harmonisation des teintes de navigation, XP, série, calendrier, leçons validées, catégories, étoiles, avertissements, actions secondaires et boutons sensibles. Supports du logo adaptés au sombre, contours de focus visibles, cartes et panneaux cohérents. Les réponses correctes et incorrectes gardent leur distinction et leur lisibilité.
+1. `04 Captures/Sur PC/01-landing.png` — page publique.
+2. `04 Captures/Sur PC/02-parcours-sombre.png` — écran principal sombre.
+3. `04 Captures/Sur PC/03-contact.png` — formulaire.
+4. `04 Captures/Sur Mobile/01-lecon.png` — exercice.
+5. `04 Captures/Sur Mobile/02-resultat.png` — résultat réel de la leçon.
 
-L’en-tête mobile porte désormais le vrai logo. L’écran de résultat a été compacté pour rendre visibles le score, les XP et le bouton de poursuite dans un écran 390 × 844. La typographie des questions évite les guillemets français isolés en début de ligne. Le moteur, les contenus pédagogiques et le format des sauvegardes restent compatibles avec V1.
+**Deux affiches entièrement recomposées, 1080 × 1080 px**, dans `04 Captures/Affiches campagne/` :
 
-## 5. Captures retenues : cinq seulement
+- `01-apprendre.png` — « Osez votre premier Hello. » : typographie forte, dégradé violet, logo officiel, exercice réel et correction Hello, CTA.
+- `02-hors-connexion.png` — « Votre anglais. Même hors ligne. » : composition distincte, résultat réel explicitement présenté comme exemple, CTA et conditions de fonctionnement hors ligne.
 
-Les seize anciennes captures répétitives ont été remplacées par cette sélection de cinq écrans issus de la production. Aucune longue capture mobile intégrale :
+Les sources HTML autonomes sont fournies. Les composants de l’application proviennent de captures réelles, sans modification des scores ni du DOM. Les affiches ne promettent ni certification ni résultat garanti. Les textes principaux restent lisibles à la taille d’un fil mobile. Les conditions hors ligne précisent le premier chargement connecté et la disponibilité des voix sur l’appareil.
 
-| Fichier sous `04 Captures` | Choix |
+## Tests et preuves
+
+| Contrôle | Résultat |
 |---|---|
-| `Sur PC/01-landing.png` | Première vue représentative, proposition de valeur et CTA |
-| `Sur PC/02-parcours-sombre.png` | Écran principal, logo officiel et cohérence sombre |
-| `Sur PC/03-contact.png` | Nouvelle section Contact, cadrée sur son contenu |
-| `Sur Mobile/01-lecon.png` | Exercice réel et action accessible |
-| `Sur Mobile/02-resultat.png` | Score, XP et poursuite du parcours |
+| TypeScript et build Vite | Réussite |
+| Tests unitaires/serveur | 23 réussites |
+| Suite navigateur locale | 12 scénarios réussis |
+| Production, domaine Vercel public | 11 réussites initiales ; délai de navigation dépassé pour le scénario d’accessibilité ; relance ciblée réussie, soit les 12 scénarios distincts vérifiés |
+| Accessibilité axe WCAG A/AA sur les écrans testés | Aucune violation détectée après chargement, modes clair/sombre inclus |
+| Formulaire production | Deux e-mails acceptés SMTP ; affichage de succès réel |
+| Refus SMTP | Connexions TCP réelles à un serveur local contrôlé : refus admin 550 et refus de confirmation 550, comportements corrects |
+| API publique | Jeton 200 sans cache ; absence de jeton/origine interdite 403 ; champs invalides/piège anti-robot 400 |
+| Routes publiques | 12 réponses HTTP 200 : six routes sur chacun des deux domaines |
+| PWA et offline canoniques | Installation autonome, nom, redémarrages hors ligne et progression vérifiés |
+| Logos, captures, affiches | Inspection visuelle, proportions et dimensions contrôlées |
+| Secrets et Git | Analyse des fichiers suivis, contrôle du diff et push réalisés |
 
-## 6. Deux nouvelles affiches premium
+Preuves principales : `final-verification-v11.json`, `browser-production-full-v11.json` (échec de navigation initial conservé), `browser-results.json` (relance d’accessibilité), `http-production.json`, `contact-production-v11.json`, `contact-dual-production-v11.json`, `offline-restart.json`, `pwa-installed-v11.json` et `03 Etat livraison.json`.
 
-Dans `04 Captures/Affiches campagne/` :
+Les erreurs/succès client interceptés dans certains tests navigateur sont des simulations explicitement nommées. Ils complètent les tests SMTP réels contrôlés et la soumission réelle en production ; ils ne sont pas présentés comme des e-mails envoyés. Aucune panne SMTP de production n’a été volontairement provoquée.
 
-- `01-apprendre.png` : « L’anglais ouvre des portes. Osez. »
-- `02-hors-connexion.png` : « Moins de réseau. Toujours plus d’élan. »
+## Limites connues
 
-Format vérifié : **1080 × 1080 px**. Direction artistique violette, fonds profonds, halo et trame discrets, hiérarchie typographique renforcée, accent chaud sur l’appel à l’action, logo officiel sur support clair et captures réelles de l’application. Les conditions du hors-ligne et l’absence de certification sont indiquées sans promesse de fonctionnalité inexistante. Les versions HTML autonomes sont conservées pour modifier les compositions.
+- Délais réseau intermittents observés pendant certaines navigations depuis l’environnement de test ; les échecs sont conservés. Les contrôles ciblés et les routes publiques ont ensuite réussi. Cela ne constitue pas une garantie de disponibilité continue.
+- Limitation anti-abus et déduplication en mémoire par instance, sans stockage distribué.
+- Pas de validation visuelle native dans Gmail/Outlook, ni d’installation physique Android/iOS ; vérifications navigateur et Windows seulement. L’acceptation SMTP ne prouve pas le classement en boîte de réception.
+- Audio hors ligne selon les voix disponibles ; transcription conservée. Pas de synchronisation de progression entre appareils.
+- Les anciens rapports Lighthouse concernent la V1 et ne sont pas présentés comme de nouvelles mesures V1.1.
 
-## 7. Vérifications
-
-- Compilation TypeScript et build Vite réussis ; 18 tests unitaires du moteur, du serveur et du modèle HTML réussis.
-- **11 tests navigateur réussis** dans la suite finale sur l’alias public du même déploiement de production : branding desktop/mobile, manifest, formulaire en succès simulé et erreurs, accessibilité, thèmes, clavier, largeurs 320–1440 px, 15 leçons complètes, 82 exercices, plafonnement à 1 120 XP, pause, import/export, audio alternatif et hors-ligne.
-- Audit automatique WCAG A/AA sans violation détectée sur Landing Page, application, paramètres, progression et réponses en thème sombre. Cet audit automatique ne remplace pas un audit humain exhaustif.
-- Contrôle réel des refus API : jeton absent, champs invalides, piège anti-robot et origine étrangère ; aucune de ces requêtes n’envoie d’e-mail.
-- Hors-ligne : fermeture du processus navigateur, redémarrage sans réseau, leçon terminée avec 70 XP, second redémarrage toujours hors ligne avec progression conservée.
-- PWA : installation et lancement autonome réels ; aucune erreur de manifest ni d’installabilité, zéro erreur JavaScript lors du contrôle dédié.
-- HTTP : les six ressources contrôlées sur chacun des deux domaines publics répondent 200, avec HTTPS et en-têtes de sécurité.
-- Secrets : fichiers de comptes exclus et scan des fichiers suivis incluant jetons GitHub/Vercel et mot de passe SMTP.
-
-Plusieurs passes sur le domaine personnalisé ont rencontré des délais réseau intermittents avant le chargement des pages ; leurs échecs sont conservés dans `browser-network-retry-v11.json`. Les deux adresses IPv4 Vercel du domaine et les deux de l’alias ont ensuite répondu HTTP 200 lors d’un contrôle TLS direct. La suite complète finale utilise l’alias Vercel public, qui sert le même déploiement. Le formulaire réel, l’installation PWA et le hors-ligne après redémarrage sont également vérifiés sur le domaine officiel. Le contrôle dédié `canonical-smoke-v11.json` vérifie ses images, ses CTA, son formulaire et son affichage mobile ; les délais d’une précédente passe restent visibles dans `browser-canonical-landing-v11.json`. Le test d’images a aussi été corrigé pour faire défiler les images chargées à la demande avant de vérifier leur décodage. Les preuves de la dernière passe sont enregistrées dans `browser-results.json`, `http-production.json`, `offline-restart.json`, `pwa-installability.json` et les rapports V1.1 cités plus haut.
-
-Les rapports Lighthouse antérieurs restent des mesures historiques de V1 ; ils ne sont pas présentés comme des mesures V1.1.
-
-## 8. Maintenance
-
-La V1.1 nécessite le déploiement des sources et de la fonction `api/contact.js`, avec Nodemailer et les variables SMTP. Un simple envoi de `dist` ne suffit plus. Le README décrit cette configuration et les scripts reproductibles. Le service worker ne stocke jamais l’API de contact. Les données pédagogiques demeurent locales et aucune synchronisation de progression n’a été ajoutée.
-
-## 9. Complément : e-mail HTML premium
-
-À la demande de l’utilisateur après réception du premier test, ajout d’un modèle e-mail à tableaux, entièrement stylé en ligne. En-tête dégradé #6D5CFF → #A855F7 avec fond violet uni de repli ; nom Speakora, slogan, titre demandé ; carte nom/e-mail/sujet/date ; message dans un bloc distinct ; mention de provenance et signature MORA Shawiri. Toutes les couleurs officielles demandées sont présentes.
-
-L’expéditeur est « Speakora — MORA Shawiri », avec l’adresse d’envoi officielle configurée. Le sujet reste `[Speakora] {Sujet}`. La date est calculée côté serveur dans le fuseau Indian/Comoro. Les champs visiteurs sont échappés pour empêcher l’injection HTML ; les retours à la ligne sont conservés. Le MIME contient `text/plain` et `text/html`. Aucun JavaScript, CSS distant, police distante ou image distante.
-
-Rendu navigateur vérifié à 760 px et 390 px ; essai à 320 px avec une chaîne de 5 000 caractères sans débordement. Les tableaux, attributs bgcolor, styles inline et encadrement conditionnel MSO visent Gmail et Outlook. Les clients Outlook classiques peuvent remplacer le dégradé par le fond violet uni et afficher les angles droits. Aucun test visuel natif Gmail/Outlook n’a été effectué : les PNG sont des aperçus du HTML, pas des captures de ces messageries. Référence de compatibilité : https://www.caniemail.com/features/css-linear-gradient/ ; format d’expéditeur : https://nodemailer.com/message/addresses.
-
-Le nouveau test réel autorisé utilise la référence `SPEAKORA-V11-HTML-20260929`. Il a été envoyé le 29 septembre 2026 à 17 h 50 (Comores), accepté par SMTP avec une réponse HTTP 200. Son résultat est enregistré dans `contact-html-production-v11.json`. Le dossier `Email V1.1` contient le HTML du même message avec la date renvoyée par le serveur, les aperçus ordinateur/mobile et les contrôles de rendu.
-
-## État final de livraison
-
-Application et serveur HTML : commit `9ae4b36c117bc522cd557677592f4e010fdc8d80`, déploiement `dpl_DYZEPrYqPAnbAGoh4TycdKDLQjV8`, état READY. Les commits de documentation/captures ultérieurs ne modifient pas ce code de production. Audit npm des dépendances de production : zéro vulnérabilité signalée. Le rapport de la suite finale contient 11 réussites et aucun échec.
-
-## 10. Révision du mail admin : composition centrée
-
-Suite au retour de l’utilisateur, le modèle a été repris pour suivre les règles fournies pour les e-mails Fluent Forms : conteneur centré de 640 px maximum, fond #F5F7FB, carte blanche arrondie et ombre légère, grand en-tête dégradé avec marque et slogan centrés, badge et titre centrés. Les coordonnées sont regroupées à gauche dans une carte #F8F7FF, avec labels violets et valeurs #111827. Le message possède son propre bloc à bordure mauve, suivi d’un conseil encadré et centré. La signature est centrée.
-
-Les styles demeurent entièrement inline, les tableaux et le repli Outlook sont conservés. Les tests de sécurité, les alternatives HTML/texte et les sujets restent inchangés. Vérification : 18 tests unitaires réussis et aperçus à 760/390 px, avec stress à 320 px pour 5 000 caractères. Le nouveau message de test autorisé porte la référence `SPEAKORA-V11-CENTRE-20260929` ; ses preuves et captures remplacent les aperçus de l’ancien modèle dans `Email V1.1`. La réception de l’ancien mail HTML a été confirmée par l’utilisateur avant cette révision.
-
-Révision centrée déployée et vérifiée : envoi réel accepté par SMTP le 29 septembre 2026 à 18 h 20 (Comores), réponse HTTP 200. Les captures ont été régénérées avec l’horodatage exact renvoyé par la production. Elles montrent le HTML envoyé, rendu dans Chromium ; elles ne sont pas présentées comme des captures natives Gmail/Outlook. La dernière modification concerne uniquement le modèle d’e-mail : les 11 tests navigateur de l’application restent ceux de la passe précédente, les 18 tests unitaires ont été rejoués avec succès après cette modification.
+La production a été vérifiée au-delà du seul état READY : navigation, apprentissage, formulaire réel, e-mails, API, installation et redémarrages hors ligne.
