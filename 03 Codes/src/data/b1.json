@@ -20,7 +20,7 @@
             "am"
           ],
           "answer": 0,
-          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+          "explanation": "Le present perfect se forme avec have + participe passé. Avec I, on emploie have."
         },
         {
           "id": "b1-1-2",
@@ -33,7 +33,7 @@
             "She has lived here in 2010."
           ],
           "answer": 0,
-          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+          "explanation": "Since 2010 relie un point de départ passé à une situation toujours actuelle : has lived."
         },
         {
           "id": "b1-1-3",
@@ -46,7 +46,7 @@
             "Are"
           ],
           "answer": 0,
-          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+          "explanation": "La question au present perfect place Have avant le sujet you."
         },
         {
           "id": "b1-1-4",
@@ -59,7 +59,7 @@
             "ago"
           ],
           "answer": 0,
-          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+          "explanation": "For accompagne une durée, ici five years. Since accompagne un point de départ."
         },
         {
           "id": "b1-1-5",
@@ -72,7 +72,7 @@
             "I had just finished my work"
           ],
           "answer": 0,
-          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+          "explanation": "Just indique que l’action vient de se terminer : have just finished."
         },
         {
           "id": "b1-1-6",
@@ -88,7 +88,7 @@
             "years"
           ],
           "answer": "We have known each other for years",
-          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+          "explanation": "Know devient known au participe passé. For years indique une durée jusqu’au présent."
         }
       ]
     },
@@ -109,7 +109,7 @@
             "Retarder"
           ],
           "answer": 0,
-          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+          "explanation": "Give up signifie abandonner ou renoncer."
         },
         {
           "id": "b1-2-2",
@@ -122,7 +122,7 @@
             "I'm looking at my keys."
           ],
           "answer": 0,
-          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+          "explanation": "Look for signifie chercher. Look after signifie s’occuper de."
         },
         {
           "id": "b1-2-3",
@@ -135,7 +135,7 @@
             "down"
           ],
           "answer": 0,
-          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+          "explanation": "Turn on signifie allumer. Turn off signifie éteindre."
         },
         {
           "id": "b1-2-4",
@@ -148,7 +148,7 @@
             "Attendre"
           ],
           "answer": 0,
-          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+          "explanation": "Look after signifie prendre soin de quelqu’un ou de quelque chose."
         },
         {
           "id": "b1-2-5",
@@ -161,7 +161,7 @@
             "Don't take up your dreams"
           ],
           "answer": 0,
-          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+          "explanation": "Don’t give up on your dreams signifie « N’abandonnez pas vos rêves »."
         },
         {
           "id": "b1-2-6",
@@ -175,7 +175,7 @@
             "mother"
           ],
           "answer": "She takes after her mother",
-          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+          "explanation": "Take after signifie ressembler à un membre de sa famille. Avec she : takes after."
         }
       ]
     },
@@ -196,7 +196,7 @@
             "been"
           ],
           "answer": 0,
-          "explanation": "Will peut exprimer une promesse ; be going to, une intention ou une prévision fondée sur un indice."
+          "explanation": "Will + verbe exprime ici une promesse spontanée : I will help you."
         },
         {
           "id": "b1-3-2",
@@ -209,7 +209,7 @@
             "We will going to travel to Spain."
           ],
           "answer": 0,
-          "explanation": "Will peut exprimer une promesse ; be going to, une intention ou une prévision fondée sur un indice."
+          "explanation": "Be going to + verbe exprime une intention : are going to travel."
         },
         {
           "id": "b1-3-3",
@@ -222,7 +222,7 @@
             "is go"
           ],
           "answer": 0,
-          "explanation": "On utilise be going to pour une prévision appuyée par un indice visible."
+          "explanation": "Les nuages constituent un indice visible : on utilise is going to rain."
         },
         {
           "id": "b1-3-4",
@@ -235,7 +235,7 @@
             "It's going to be sunny tomorrow"
           ],
           "answer": 0,
-          "explanation": "Will peut exprimer une promesse ; be going to, une intention ou une prévision fondée sur un indice."
+          "explanation": "It’s going to rain tomorrow signifie « Il va pleuvoir demain »."
         },
         {
           "id": "b1-3-5",
@@ -249,7 +249,7 @@
             "week"
           ],
           "answer": "They will arrive next week",
-          "explanation": "Will peut exprimer une promesse ; be going to, une intention ou une prévision fondée sur un indice."
+          "explanation": "Will est suivi de la base verbale arrive. Next week signifie la semaine prochaine."
         }
       ]
     }

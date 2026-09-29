@@ -20,7 +20,7 @@
             "to look up"
           ],
           "answer": 0,
-          "explanation": "Au présent simple, ajoutez généralement -s au verbe avec he, she et it : « She works »."
+          "explanation": "To wake up signifie se réveiller. La particule up fait partie du verbe."
         },
         {
           "id": "a2-1-2",
@@ -33,7 +33,7 @@
             "gone"
           ],
           "answer": 0,
-          "explanation": "Au présent simple, ajoutez généralement -s au verbe avec he, she et it : « She works »."
+          "explanation": "Au présent simple, go devient goes avec he, she et it."
         },
         {
           "id": "a2-1-3",
@@ -46,7 +46,7 @@
             "I am usually breakfast at 7."
           ],
           "answer": 0,
-          "explanation": "Au présent simple, ajoutez généralement -s au verbe avec he, she et it : « She works »."
+          "explanation": "Usually signifie généralement et se place avant le verbe have. Breakfast est le petit-déjeuner."
         },
         {
           "id": "a2-1-4",
@@ -59,7 +59,7 @@
             "I go home at ten o'clock"
           ],
           "answer": 0,
-          "explanation": "Au présent simple, ajoutez généralement -s au verbe avec he, she et it : « She works »."
+          "explanation": "Go to bed signifie aller se coucher ; ten o’clock indique dix heures."
         },
         {
           "id": "a2-1-5",
@@ -72,7 +72,7 @@
             "day"
           ],
           "answer": "She works every day",
-          "explanation": "Au présent simple, ajoutez généralement -s au verbe avec he, she et it : « She works »."
+          "explanation": "Avec she, work prend un -s. Every day signifie tous les jours."
         }
       ]
     },
@@ -93,7 +93,7 @@
             "I am a coffee, please."
           ],
           "answer": 0,
-          "explanation": "« I would like… » est une façon polie de commander. « Can I have…? » permet de demander quelque chose."
+          "explanation": "I would like est une demande polie : je voudrais."
         },
         {
           "id": "a2-2-2",
@@ -106,7 +106,7 @@
             "having"
           ],
           "answer": 0,
-          "explanation": "« I would like… » est une façon polie de commander. « Can I have…? » permet de demander quelque chose."
+          "explanation": "Après can, on utilise le verbe sans to et sans conjugaison : have."
         },
         {
           "id": "a2-2-3",
@@ -119,7 +119,7 @@
             "The waiter, please."
           ],
           "answer": 0,
-          "explanation": "« I would like… » est une façon polie de commander. « Can I have…? » permet de demander quelque chose."
+          "explanation": "The bill désigne l’addition. Please rend la demande polie."
         },
         {
           "id": "a2-2-4",
@@ -132,7 +132,7 @@
             "A ticket for two, please"
           ],
           "answer": 0,
-          "explanation": "« I would like… » est une façon polie de commander. « Can I have…? » permet de demander quelque chose."
+          "explanation": "A table for two signifie une table pour deux personnes."
         },
         {
           "id": "a2-2-5",
@@ -146,7 +146,7 @@
             "water"
           ],
           "answer": "I would like some water",
-          "explanation": "« I would like… » est une façon polie de commander. « Can I have…? » permet de demander quelque chose."
+          "explanation": "Would like est suivi ici du groupe nominal some water : de l’eau."
         }
       ]
     },
@@ -167,7 +167,7 @@
             "going"
           ],
           "answer": 0,
-          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+          "explanation": "Last year situe l’action dans le passé. Le prétérit irrégulier de go est went."
         },
         {
           "id": "a2-3-2",
@@ -180,7 +180,7 @@
             "She is watching a movie yesterday."
           ],
           "answer": 0,
-          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+          "explanation": "Yesterday appelle le prétérit : watched, formé avec -ed."
         },
         {
           "id": "a2-3-3",
@@ -193,7 +193,7 @@
             "playing"
           ],
           "answer": 0,
-          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+          "explanation": "Pour cette action passée terminée, on utilise played, le prétérit de play."
         },
         {
           "id": "a2-3-4",
@@ -206,7 +206,7 @@
             "We wanted the museum last week"
           ],
           "answer": 0,
-          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+          "explanation": "Last week signifie la semaine dernière. Visited est le prétérit de visit."
         },
         {
           "id": "a2-3-5",
@@ -219,7 +219,7 @@
             "He not came."
           ],
           "answer": 0,
-          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+          "explanation": "Après didn’t, le verbe reste à la base verbale : come, et non came."
         },
         {
           "id": "a2-3-6",
@@ -232,7 +232,7 @@
             "dog"
           ],
           "answer": "I saw a dog",
-          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+          "explanation": "Le prétérit irrégulier de see est saw. A dog signifie un chien."
         }
       ]
     }

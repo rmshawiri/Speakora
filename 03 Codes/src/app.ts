@@ -1,6 +1,6 @@
 import './styles.css';
 import './pwa';
-import { networkStatus } from './pwa';
+import { networkStatus, refreshInstallButtons } from './pwa';
 import { levels, lessons, lessonById } from './data';
 import type { Exercise } from './data/types';
 import { emptyProgress, loadProgress, saveProgress, validateProgress, passed, scoreOf, totalXP, streak, stars, unlocked, finish, currentLevel, dateKey, STORAGE_KEY } from './core/progress';
@@ -24,7 +24,7 @@ function shell(content:string,active='home'){
  $('#application').innerHTML=`<aside class="sidebar"><a href="/" class="app-brand"><img src="/brand/icon-48.png" width="42" height="42" alt=""><b>Speakora<span>Apprenez. Pratiquez. Progressez.</span></b></a><div class="sidebar-label">VOTRE ESPACE D’ANGLAIS</div><nav aria-label="Application"><button data-nav="home" class="${active==='home'?'active':''}">${icon('book')} Mon parcours</button><button data-nav="stats" class="${active==='stats'?'active':''}">${icon('chart')} Ma progression</button><button data-nav="settings" class="${active==='settings'?'active':''}">${icon('settings')} Paramètres</button></nav><div class="sidebar-bottom"><div class="daily-mini">${icon('target')}<b>Un peu chaque jour.</b><p>La régularité fait la différence.</p></div><a href="/">À propos de Speakora</a><span>Par MORA Shawiri</span></div></aside><div class="app-shell"><header class="app-header"><span class="app-breadcrumb">${active==='quiz'?'Une leçon à la fois':active==='stats'?'Chaque progrès compte':active==='settings'?'Votre expérience Speakora':'Votre parcours d’anglais'}</span><div class="header-stats"><span class="xp-pill">${icon('bolt',18)} ${totalXP(progress)} <small>XP</small></span><span class="streak-pill" title="Jours consécutifs avec une leçon terminée">${icon('flame',18)} ${streak(progress)}</span><button class="icon-button" id="theme-toggle" aria-label="${progress.theme==='light'?'Activer le thème sombre':'Activer le thème clair'}">${icon(progress.theme==='light'?'moon':'sun',19)}</button></div></header><main id="main" class="app-main" tabindex="-1">${storageBlocked?'<div class="storage-warning" role="alert">La sauvegarde locale est indisponible ou illisible. Exportez votre progression dans les paramètres avant de fermer la page.</div>':''}${content}</main><footer class="app-footer"><span>${icon('wifi',14)} <span data-network></span></span><span>Vos progrès restent sur cet appareil.</span></footer></div><nav class="bottom-nav" aria-label="Navigation mobile"><button data-nav="home" class="${active==='home'?'active':''}">${icon('book',21)}<span>Parcours</span></button><button data-nav="stats" class="${active==='stats'?'active':''}">${icon('chart',21)}<span>Progrès</span></button><button data-nav="settings" class="${active==='settings'?'active':''}">${icon('settings',21)}<span>Réglages</span></button></nav>`;
  document.querySelectorAll<HTMLElement>('[data-nav]').forEach(b=>b.onclick=()=>navigate(b.dataset.nav!));
  $('#theme-toggle').onclick=()=>{progress.theme=progress.theme==='light'?'dark':'light';applyTheme();persist();const b=$('#theme-toggle');b.innerHTML=icon(progress.theme==='light'?'moon':'sun',19);b.setAttribute('aria-label',progress.theme==='light'?'Activer le thème sombre':'Activer le thème clair');};
- networkStatus();applyTheme();
+ networkStatus();refreshInstallButtons();applyTheme();
 }
 function navigate(destination:string){if(page==='quiz'){confirmAction('Mettre la leçon en pause ?','Vos réponses déjà validées sont conservées dans cet onglet. Vous pourrez reprendre depuis votre parcours.','Mettre en pause',()=>show(destination));}else show(destination);}
 function show(destination:string){if(destination==='settings')settings();else if(destination==='stats')stats();else home();window.scrollTo(0,0);$('#main').focus({preventScroll:true});}
@@ -65,12 +65,12 @@ function checkAnswer(){
  if(!quiz||quiz.checked)return;const ex=lessonById(quiz.lessonId)!.exercises[quiz.index];
  if(ex.type!=='order'&&quiz.selected===null)return;if(ex.type==='order'&&quiz.placed.length!==ex.words.length)return;
  const correct=ex.type==='order'?quiz.placed.map(i=>ex.words[i]).join(' ')===ex.words.join(' '):quiz.selected===ex.answer;
- quiz.checked=true;if(correct)quiz.correct++;
+ quiz.checked=true;
  const answer=ex.type==='order'?ex.answer:ex.options[ex.answer];
  if(progress.sound)sound(correct);
  document.querySelectorAll<HTMLButtonElement>('[data-answer], [data-word], [data-remove]').forEach(b=>{b.disabled=true;if(b.dataset.answer!==undefined&&ex.type!=='order'){if(Number(b.dataset.answer)===ex.answer)b.classList.add('correct');else if(Number(b.dataset.answer)===quiz!.selected)b.classList.add('incorrect');}});
  const feedback=$('#feedback');feedback.hidden=false;feedback.className=`answer-feedback ${correct?'correct':'incorrect'}`;feedback.innerHTML=`<b>${icon(correct?'check':'book',20)} ${correct?'Bien joué !':'Un pas de plus pour comprendre.'}</b><p>Réponse : <strong>${esc(answer)}</strong></p><p>${esc(ex.explanation)}</p>`;
- const button=$('#check');button.textContent=quiz.index===lessonById(quiz.lessonId)!.exercises.length-1?'Voir mon résultat':'Continuer';button.onclick=()=>{if(!quiz)return;quiz.index++;if(quiz.index>=lessonById(quiz.lessonId)!.exercises.length)finishLesson();else renderQuestion();};button.focus({preventScroll:true});feedback.scrollIntoView({block:'nearest',behavior:'smooth'});
+ const button=$('#check');button.textContent=quiz.index===lessonById(quiz.lessonId)!.exercises.length-1?'Voir mon résultat':'Continuer';button.onclick=()=>{if(!quiz)return;if(correct)quiz.correct++;quiz.index++;if(quiz.index>=lessonById(quiz.lessonId)!.exercises.length)finishLesson();else renderQuestion();};button.focus({preventScroll:true});feedback.scrollIntoView({block:'nearest',behavior:'smooth'});
 }
 function finishLesson(){
  if(!quiz)return;const id=quiz.lessonId;const lesson=lessonById(id)!;const correct=quiz.correct;const result=finish(progress,id,correct);progress=result.progress;persist();quiz=null;persistSession();const success=result.score>=60;

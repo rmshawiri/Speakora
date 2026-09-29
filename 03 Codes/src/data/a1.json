@@ -20,7 +20,7 @@
             "Sorry"
           ],
           "answer": 0,
-          "explanation": "Pour se présenter : « I am… ». Pour saluer : « Hello ». Pour remercier : « Thank you »."
+          "explanation": "Hello est la salutation courante pour dire bonjour."
         },
         {
           "id": "a1-1-2",
@@ -33,7 +33,7 @@
             "Thank you"
           ],
           "answer": 1,
-          "explanation": "Pour se présenter : « I am… ». Pour saluer : « Hello ». Pour remercier : « Thank you »."
+          "explanation": "Goodbye signifie au revoir. Please veut dire s’il vous plaît."
         },
         {
           "id": "a1-1-3",
@@ -46,7 +46,7 @@
             "be"
           ],
           "answer": 0,
-          "explanation": "Pour se présenter : « I am… ». Pour saluer : « Hello ». Pour remercier : « Thank you »."
+          "explanation": "Avec le sujet I, le verbe be devient am : I am John."
         },
         {
           "id": "a1-1-4",
@@ -59,7 +59,7 @@
             "My name is John"
           ],
           "answer": 0,
-          "explanation": "Pour se présenter : « I am… ». Pour saluer : « Hello ». Pour remercier : « Thank you »."
+          "explanation": "Nice to meet you signifie « Enchanté de faire votre connaissance »."
         },
         {
           "id": "a1-1-5",
@@ -71,7 +71,7 @@
             "fine"
           ],
           "answer": "I am fine",
-          "explanation": "Pour se présenter : « I am… ». Pour saluer : « Hello ». Pour remercier : « Thank you »."
+          "explanation": "En anglais, le sujet précède le verbe : I + am + fine."
         }
       ]
     },
@@ -92,7 +92,7 @@
             "Yellow"
           ],
           "answer": 0,
-          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+          "explanation": "Red signifie rouge ; blue, bleu ; green, vert ; yellow, jaune."
         },
         {
           "id": "a1-2-2",
@@ -105,7 +105,7 @@
             "Huit"
           ],
           "answer": 2,
-          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+          "explanation": "Seven correspond au nombre sept."
         },
         {
           "id": "a1-2-3",
@@ -118,7 +118,7 @@
             "black"
           ],
           "answer": 0,
-          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+          "explanation": "Blue signifie bleu. Après is, on décrit ici la couleur du ciel."
         },
         {
           "id": "a1-2-4",
@@ -131,7 +131,7 @@
             "Two"
           ],
           "answer": 0,
-          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+          "explanation": "Three signifie trois. Attention à tree, qui signifie arbre."
         },
         {
           "id": "a1-2-5",
@@ -144,7 +144,7 @@
             "I have three green trees"
           ],
           "answer": 0,
-          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+          "explanation": "La phrase indique trois pommes vertes : three green apples."
         },
         {
           "id": "a1-2-6",
@@ -157,7 +157,7 @@
             "green"
           ],
           "answer": "The grass is green",
-          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+          "explanation": "On suit l’ordre sujet + verbe + adjectif : The grass + is + green."
         }
       ]
     },
@@ -178,7 +178,7 @@
             "My brother"
           ],
           "answer": 0,
-          "explanation": "Avec I, utilisez am ; avec he ou she, is ; avec you, we ou they, are."
+          "explanation": "Mother signifie mère. My mother signifie ma mère."
         },
         {
           "id": "a1-3-2",
@@ -191,7 +191,7 @@
             "Oncle"
           ],
           "answer": 1,
-          "explanation": "Avec I, utilisez am ; avec he ou she, is ; avec you, we ou they, are."
+          "explanation": "Brother signifie frère. Sister signifie sœur."
         },
         {
           "id": "a1-3-3",
@@ -204,7 +204,7 @@
             "be"
           ],
           "answer": 0,
-          "explanation": "Avec I, utilisez am ; avec he ou she, is ; avec you, we ou they, are."
+          "explanation": "Avec she, on utilise is : She is my sister."
         },
         {
           "id": "a1-3-4",
@@ -217,7 +217,7 @@
             "That is my father"
           ],
           "answer": 0,
-          "explanation": "Avec I, utilisez am ; avec he ou she, is ; avec you, we ou they, are."
+          "explanation": "This is my father signifie « Voici mon père »."
         },
         {
           "id": "a1-3-5",
@@ -230,7 +230,7 @@
             "tall"
           ],
           "answer": "My brother is tall",
-          "explanation": "Avec I, utilisez am ; avec he ou she, is ; avec you, we ou they, are."
+          "explanation": "My brother est le sujet, is le verbe et tall l’adjectif : grand."
         }
       ]
     }

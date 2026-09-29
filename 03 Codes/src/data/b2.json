@@ -20,7 +20,7 @@
             "be"
           ],
           "answer": 0,
-          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+          "explanation": "Dans une hypothèse irréelle, If I were rich est la forme standard, suivie de would."
         },
         {
           "id": "b2-1-2",
@@ -33,7 +33,7 @@
             "If she would have studied, she had passed."
           ],
           "answer": 0,
-          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+          "explanation": "Une hypothèse irréalisée dans le passé utilise if + had studied, puis would have passed."
         },
         {
           "id": "b2-1-3",
@@ -46,7 +46,7 @@
             "would have"
           ],
           "answer": 0,
-          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+          "explanation": "Le second conditionnel utilise le prétérit après if : if I had your number."
         },
         {
           "id": "b2-1-4",
@@ -59,7 +59,7 @@
             "If it snows tomorrow, we will stay at home"
           ],
           "answer": 0,
-          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+          "explanation": "Pour une condition future possible : if + présent, puis will + verbe."
         },
         {
           "id": "b2-1-5",
@@ -72,7 +72,7 @@
             "Pour que"
           ],
           "answer": 0,
-          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+          "explanation": "Unless introduit une exception : à moins que, sauf si."
         },
         {
           "id": "b2-1-6",
@@ -88,7 +88,7 @@
             "apply."
           ],
           "answer": "If I were you, I would apply.",
-          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+          "explanation": "If I were you signifie à ta place ; I would apply signifie je postulerais."
         }
       ]
     },
@@ -109,7 +109,7 @@
             "has made"
           ],
           "answer": 0,
-          "explanation": "La voix passive se forme avec be au temps voulu + participe passé : « was made », « is spoken »."
+          "explanation": "La voix passive au passé se forme avec was + participe passé : was made."
         },
         {
           "id": "b2-2-2",
@@ -122,7 +122,7 @@
             "The letter have been sent."
           ],
           "answer": 0,
-          "explanation": "La voix passive se forme avec be au temps voulu + participe passé : « was made », « is spoken »."
+          "explanation": "Au present perfect passif : has been + participe passé, ici sent."
         },
         {
           "id": "b2-2-3",
@@ -135,7 +135,7 @@
             "spoken"
           ],
           "answer": 0,
-          "explanation": "La voix passive se forme avec be au temps voulu + participe passé : « was made », « is spoken »."
+          "explanation": "Au présent passif : is + spoken, participe passé de speak."
         },
         {
           "id": "b2-2-4",
@@ -148,7 +148,7 @@
             "The bridge burnt down in 1900"
           ],
           "answer": 0,
-          "explanation": "La voix passive se forme avec be au temps voulu + participe passé : « was made », « is spoken »."
+          "explanation": "Was built est le passif au prétérit de build. L’année entendue est 1900."
         },
         {
           "id": "b2-2-5",
@@ -161,7 +161,7 @@
             "broken."
           ],
           "answer": "The window was broken.",
-          "explanation": "La voix passive se forme avec be au temps voulu + participe passé : « was made », « is spoken »."
+          "explanation": "The window subit l’action : was + broken, participe passé de break."
         }
       ]
     },
@@ -182,7 +182,7 @@
             "Il y a beaucoup d'animaux"
           ],
           "answer": 0,
-          "explanation": "Une expression idiomatique ne se traduit pas mot à mot. « A piece of cake » désigne quelque chose de facile."
+          "explanation": "It’s raining cats and dogs est une expression qui signifie qu’il pleut très fort."
         },
         {
           "id": "b2-3-2",
@@ -195,7 +195,7 @@
             "Dépêche-toi !"
           ],
           "answer": 0,
-          "explanation": "Une expression idiomatique ne se traduit pas mot à mot. « A piece of cake » désigne quelque chose de facile."
+          "explanation": "Break a leg! est une façon idiomatique de souhaiter bonne chance, notamment avant une représentation."
         },
         {
           "id": "b2-3-3",
@@ -208,7 +208,7 @@
             "wall"
           ],
           "answer": 0,
-          "explanation": "Une expression idiomatique ne se traduit pas mot à mot. « A piece of cake » désigne quelque chose de facile."
+          "explanation": "Hit the sack signifie aller se coucher."
         },
         {
           "id": "b2-3-4",
@@ -221,7 +221,7 @@
             "The exam was a big piece of cake"
           ],
           "answer": 0,
-          "explanation": "Une expression idiomatique ne se traduit pas mot à mot. « A piece of cake » désigne quelque chose de facile."
+          "explanation": "A piece of cake décrit quelque chose de très facile."
         },
         {
           "id": "b2-3-5",
@@ -235,7 +235,7 @@
             "day."
           ],
           "answer": "Let's call it a day.",
-          "explanation": "Une expression idiomatique ne se traduit pas mot à mot. « A piece of cake » désigne quelque chose de facile."
+          "explanation": "Let’s call it a day propose d’arrêter le travail ou l’activité pour aujourd’hui."
         }
       ]
     }

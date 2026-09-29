@@ -20,7 +20,7 @@
             "Assez arrogant"
           ],
           "answer": 0,
-          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+          "explanation": "Meticulous décrit une personne extrêmement attentive aux détails."
         },
         {
           "id": "c1-1-2",
@@ -33,7 +33,7 @@
             "Rénover complètement"
           ],
           "answer": 0,
-          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+          "explanation": "To undermine signifie saper ou affaiblir progressivement, notamment une autorité ou un argument."
         },
         {
           "id": "c1-1-3",
@@ -46,7 +46,7 @@
             "lank"
           ],
           "answer": 0,
-          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+          "explanation": "Lucid signifie clair et facile à comprendre. Les autres adjectifs ne conviennent pas ici."
         },
         {
           "id": "c1-1-4",
@@ -59,7 +59,7 @@
             "Une analyse coûteuse"
           ],
           "answer": 0,
-          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+          "explanation": "Thorough signifie complet et approfondi."
         },
         {
           "id": "c1-1-5",
@@ -72,7 +72,7 @@
             "The evidence considers his testimony"
           ],
           "answer": 0,
-          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+          "explanation": "Corroborate signifie confirmer ou appuyer par des éléments concordants."
         },
         {
           "id": "c1-1-6",
@@ -86,7 +86,7 @@
             "unfeasible."
           ],
           "answer": "The proposal was deemed unfeasible.",
-          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+          "explanation": "Was deemed signifie a été jugé ; unfeasible signifie irréalisable."
         }
       ]
     },
@@ -107,7 +107,7 @@
             "I had seen"
           ],
           "answer": 0,
-          "explanation": "Après certaines expressions négatives en début de phrase, on inverse auxiliaire et sujet : « Rarely have I… »."
+          "explanation": "Rarely en tête de phrase entraîne une inversion : have I seen, et non I have seen."
         },
         {
           "id": "c1-2-2",
@@ -120,7 +120,7 @@
             "have left"
           ],
           "answer": 0,
-          "explanation": "Après certaines expressions négatives en début de phrase, on inverse auxiliaire et sujet : « Rarely have I… »."
+          "explanation": "Après it’s high time, on utilise le prétérit pour une action qui devrait déjà se produire : we left."
         },
         {
           "id": "c1-2-3",
@@ -133,7 +133,7 @@
             "If I knew, I would have come."
           ],
           "answer": 0,
-          "explanation": "Après certaines expressions négatives en début de phrase, on inverse auxiliaire et sujet : « Rarely have I… »."
+          "explanation": "Had I known remplace if I had known. La conséquence passée est would have come."
         },
         {
           "id": "c1-2-4",
@@ -146,7 +146,7 @@
             "Only did she win, but she also broke the record"
           ],
           "answer": 0,
-          "explanation": "Après certaines expressions négatives en début de phrase, on inverse auxiliaire et sujet : « Rarely have I… »."
+          "explanation": "Not only en tête de proposition entraîne l’inversion : did she win."
         },
         {
           "id": "c1-2-5",
@@ -162,7 +162,7 @@
             "him."
           ],
           "answer": "Little did he know what awaited him.",
-          "explanation": "Après certaines expressions négatives en début de phrase, on inverse auxiliaire et sujet : « Rarely have I… »."
+          "explanation": "Little en tête de phrase entraîne l’inversion did he know ; le verbe reste à la base verbale après did."
         }
       ]
     },
@@ -183,7 +183,7 @@
             "Se mettre en colère"
           ],
           "answer": 0,
-          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+          "explanation": "To beat around the bush signifie éviter d’aborder directement le sujet."
         },
         {
           "id": "c1-3-2",
@@ -196,7 +196,7 @@
             "Une pièce trop encombrée"
           ],
           "answer": 0,
-          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+          "explanation": "The elephant in the room désigne un problème évident que tout le monde évite d’évoquer."
         },
         {
           "id": "c1-3-3",
@@ -209,7 +209,7 @@
             "cloud"
           ],
           "answer": 0,
-          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+          "explanation": "Over the moon signifie extrêmement heureux ou ravi."
         },
         {
           "id": "c1-3-4",
@@ -222,7 +222,7 @@
             "That argument doesn't pour water"
           ],
           "answer": 0,
-          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+          "explanation": "Doesn’t hold water signifie qu’un argument ne résiste pas à l’examen."
         },
         {
           "id": "c1-3-5",
@@ -235,7 +235,7 @@
             "Une bénédiction religieuse"
           ],
           "answer": 0,
-          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+          "explanation": "A blessing in disguise est un événement d’abord négatif qui se révèle finalement bénéfique."
         },
         {
           "id": "c1-3-6",
@@ -249,7 +249,7 @@
             "disguise."
           ],
           "answer": "It's a blessing in disguise.",
-          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+          "explanation": "It’s a blessing in disguise signifie que ce qui semblait être un problème se révèle une chance."
         }
       ]
     }
