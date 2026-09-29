@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+// @ts-expect-error Shared ESM server module.
+import {composeConfirmation} from '../server/contact.mjs';
+const env={SMTP_FROM:'Original <sender@example.com>',CONTACT_RECIPIENT:'MORA <owner@example.com>'};
+test('visitor confirmation uses fixed subject and official reply address without echoing free text',()=>{const mail=composeConfirmation({name:'https://untrusted.example',email:'visitor@example.com',subject:'Une idée ou un retour',message:'<script>untrusted.example</script>'},env,new Date('2026-09-29T15:00:00Z'));assert.equal(mail.subject,'Nous avons bien reçu votre message — Speakora');assert.equal(mail.to,'visitor@example.com');assert.equal(mail.replyTo.address,'owner@example.com');assert.equal(mail.from.name,'Speakora — MORA Shawiri');assert.ok(mail.html.includes('Merci de nous avoir écrit.'));assert.ok(mail.html.includes('dès que possible'));assert.ok(mail.html.includes('18:00'));assert.ok(!mail.html.includes('untrusted.example'));assert.ok(!mail.html.includes('<script'));assert.ok(!mail.html.includes('<style'));assert.ok(mail.text.includes('Une idée ou un retour'));});

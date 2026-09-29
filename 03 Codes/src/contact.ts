@@ -14,9 +14,9 @@ form.addEventListener('submit',async event=>{
   if(preparing)await preparing;if(!token)await prepare();
   const values=Object.fromEntries(new FormData(form));
   const response=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...values,token})});
-  const result=await response.json() as {message?:string};
+  const result=await response.json() as {message?:string;confirmationEmailSent?:boolean};
   if(!response.ok){if(response.status===403){token=undefined;preparing=undefined;}throw new Error(result.message||'L’envoi a échoué. Réessayez ou contactez-nous par e-mail.');}
-  status.dataset.error='false';status.textContent='Votre message a bien été transmis à MORA Shawiri. Merci pour votre retour !';form.reset();token=undefined;preparing=undefined;
+  status.dataset.error='false';status.textContent='Votre message a bien été transmis à MORA Shawiri. '+(result.confirmationEmailSent===true?'Un e-mail de confirmation vous a été envoyé. Notre équipe vous répondra dès que possible.':result.confirmationEmailSent===false?'L’e-mail de confirmation n’a pas pu être envoyé, mais votre demande est bien transmise. Inutile de la renvoyer.':'Merci pour votre retour !');form.reset();token=undefined;preparing=undefined;
  }catch(error){status.dataset.error='true';status.textContent=error instanceof Error?error.message:'L’envoi a échoué. Votre message reste dans le formulaire.';}
  finally{submit.disabled=false;submit.textContent='Envoyer mon message →';status.hidden=false;status.focus({preventScroll:true});status.scrollIntoView({behavior:'smooth',block:'nearest'});}
 });

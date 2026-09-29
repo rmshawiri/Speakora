@@ -1,6 +1,7 @@
 import {createHmac,randomBytes,timingSafeEqual} from 'node:crypto';
 import addressparser from 'nodemailer/lib/addressparser';
 import {renderContactEmail,emailDate} from './contact-email.mjs';
+import {renderConfirmationEmail} from './confirmation-email.mjs';
 export const subjects=['Une question sur Speakora','Un problème technique','Une idée ou un retour','Un autre sujet'];
 export function validateContact(body){
  if(!body||typeof body!=='object'||Array.isArray(body))return null;
@@ -60,7 +61,18 @@ export function createHandler({env,send,now=Date.now}){
   if(!limit(ip,now())){res.setHeader('Retry-After','600');return reply(429,'Vous avez envoyé plusieurs messages. Patientez dix minutes ou contactez-nous par e-mail.');}
   if(used.size>=15000)return reply(503,'Le formulaire est momentanément occupé. Réessayez plus tard.');
   used.set(body.token,now()+3600000);
-  try{const sentAt=new Date(now());const result=await send(composeMessage(contact,env,sentAt));if(!result?.accepted?.length)throw new Error('not accepted');return res.status(200).json({message:'Message transmis.',sentAt:sentAt.toISOString()});}
+  const sentAt=new Date(now());
+  try{const result=await send(composeMessage(contact,env,sentAt));if(!result?.accepted?.length)throw new Error('not accepted');}
   catch{used.delete(body.token);return reply(502,'Votre message n’a pas pu être transmis. Réessayez ou écrivez à contact@morashawiri.com.');}
+  // The admin copy is already accepted. A confirmation failure must not invite a duplicate submission.
+  let confirmationEmailSent=false;
+  try{const result=await send(composeConfirmation(contact,env,sentAt));confirmationEmailSent=Boolean(result?.accepted?.length);}catch{/* Report partial success without exposing SMTP details. */}
+  return res.status(200).json({message:'Message transmis.',sentAt:sentAt.toISOString(),confirmationEmailSent});
  };
+}
+export function composeConfirmation(contact,env,date=new Date()){
+ const from=addressparser(env.SMTP_FROM,{flatten:true})[0]?.address;
+ const replyTo=addressparser(env.CONTACT_RECIPIENT,{flatten:true})[0]?.address;
+ if(!from||!replyTo)throw new Error('Invalid configured sender');
+ return {from:{name:'Speakora — MORA Shawiri',address:from},to:contact.email,replyTo:{name:'Speakora — MORA Shawiri',address:replyTo},subject:'Nous avons bien reçu votre message — Speakora',text:`Speakora\nApprenez. Pratiquez. Progressez.\n\nMerci de nous avoir écrit.\n\nBonjour,\n\nNous avons bien reçu votre message envoyé depuis le formulaire de contact Speakora. L’équipe Speakora vous répondra dès que possible.\n\nSujet : ${contact.subject}\nDate : ${emailDate(date)}\n\nCet e-mail confirme l’envoi de votre demande. Vous n’avez pas besoin de remplir à nouveau le formulaire.\n\nÀ bientôt,\nL’équipe Speakora\n\nSpeakora — Un produit MORA Shawiri`,html:renderConfirmationEmail(contact,date)};
 }
