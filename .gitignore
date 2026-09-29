@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vercel/
+.env*
+!.env.example
+*Informations des comptes*
+*Informations techniques*
+*.log
+.local/
+test-results/
+playwright-report/
