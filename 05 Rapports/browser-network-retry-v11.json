@@ -1,0 +1,615 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\playwright.config.ts",
+    "rootDir": "C:/Users/HP/Desktop/IDE MORA Shawiri/Speakora/03 Codes/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/HP/Desktop/IDE MORA Shawiri/Speakora/03 Codes/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/HP/Desktop/IDE MORA Shawiri/Speakora/03 Codes/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../05 Rapports/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "accessibility.spec.ts",
+      "file": "accessibility.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "landing and application accessibility including dark mode",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 32501,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:50:43.609Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-0bb5cf65ff6d986f2865",
+          "file": "accessibility.spec.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "revision.spec.ts",
+      "file": "revision.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "official branding and short PWA name on desktop and mobile",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7507,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:51:17.437Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6220a107f9fc0395c360-c064929565d607595dbd",
+          "file": "revision.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "contact preserves text on error and offline, then confirms actual API success",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12729,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:51:25.135Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6220a107f9fc0395c360-8919d4fd5f4ab75aeed3",
+          "file": "revision.spec.ts",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "dark settings, navigation, correct and incorrect exercise states are accessible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:51:38.067Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6220a107f9fc0395c360-b45ba149328446032775",
+          "file": "revision.spec.ts",
+          "line": 18,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "speakora.spec.ts",
+      "file": "speakora.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "landing SEO, exact CTA links, images, mobile menu and responsive",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 49512,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_TIMED_OUT at https://speakora.morashawiri.com/\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_TIMED_OUT at https://speakora.morashawiri.com/\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts:15:85",
+                    "location": {
+                      "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                      "column": 85,
+                      "line": 15
+                    },
+                    "snippet": "  13 | }\n  14 | test('landing SEO, exact CTA links, images, mobile menu and responsive',async({page})=>{\n> 15 |  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/');\n     |                                                                                     ^\n  16 |  await expect(page.locator('h1')).toHaveCount(1);await expect(page).toHaveTitle(/Speakora/);\n  17 |  const ctas=page.locator('a').filter({hasText:/Commencer/});expect(await ctas.count()).toBe(3);for(const cta of await ctas.all())await expect(cta).toHaveAttribute('href','https://morashawiri.com/acceder-a-speakora/');\n  18 |  expect(await page.locator('meta[name=\"description\"]').getAttribute('content')).toBeTruthy();expect(await page.locator('link[rel=\"canonical\"]').getAttribute('href')).toMatch(/^https:\\/\\//);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                        "column": 85,
+                        "line": 15
+                      },
+                      "message": "Error: page.goto: net::ERR_TIMED_OUT at https://speakora.morashawiri.com/\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/\", waiting until \"load\"\u001b[22m\n\n\n  13 | }\n  14 | test('landing SEO, exact CTA links, images, mobile menu and responsive',async({page})=>{\n> 15 |  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/');\n     |                                                                                     ^\n  16 |  await expect(page.locator('h1')).toHaveCount(1);await expect(page).toHaveTitle(/Speakora/);\n  17 |  const ctas=page.locator('a').filter({hasText:/Commencer/});expect(await ctas.count()).toBe(3);for(const cta of await ctas.all())await expect(cta).toHaveAttribute('href','https://morashawiri.com/acceder-a-speakora/');\n  18 |  expect(await page.locator('meta[name=\"description\"]').getAttribute('content')).toBeTruthy();expect(await page.locator('link[rel=\"canonical\"]').getAttribute('href')).toMatch(/^https:\\/\\//);\n    at C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts:15:85"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:52:03.286Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\test-results\\speakora-landing-SEO-exact-fa4fa--mobile-menu-and-responsive\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\test-results\\speakora-landing-SEO-exact-fa4fa--mobile-menu-and-responsive\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                    "column": 85,
+                    "line": 15
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74bae95ea538435aa005-646bed87d9e9e2e5b9dd",
+          "file": "speakora.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "lesson success, replay cap, theme, progress persistence and failure",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 25534,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://speakora.morashawiri.com/app\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/app\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://speakora.morashawiri.com/app\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/app\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts:27:13",
+                    "location": {
+                      "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                      "column": 13,
+                      "line": 27
+                    },
+                    "snippet": "  25 | });\n  26 | test('lesson success, replay cap, theme, progress persistence and failure',async({page})=>{\n> 27 |  await page.goto('/app');await page.locator('#continue').click();await solve(page);await expect(page.locator('.result-card')).toContainText('100');await expect(page.locator('.result-metrics')).toContainText('+70 XP');\n     |             ^\n  28 |  await page.locator('#result-home').click();await expect(page.locator('[data-lesson=\"a1-2\"]')).toBeEnabled();await expect(page.locator('[data-lesson=\"a1-3\"]')).toBeDisabled();\n  29 |  await page.locator('[data-lesson=\"a1-1\"]').click();await solve(page);await expect(page.locator('.result-metrics')).toContainText('+0 XP');\n  30 |  await page.getByRole('button',{name:'Activer le thème sombre'}).click();await page.reload();await expect(page.locator('html')).toHaveAttribute('data-theme','dark');await expect(page.locator('.xp-pill')).toContainText('70');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                        "column": 13,
+                        "line": 27
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://speakora.morashawiri.com/app\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/app\", waiting until \"load\"\u001b[22m\n\n\n  25 | });\n  26 | test('lesson success, replay cap, theme, progress persistence and failure',async({page})=>{\n> 27 |  await page.goto('/app');await page.locator('#continue').click();await solve(page);await expect(page.locator('.result-card')).toContainText('100');await expect(page.locator('.result-metrics')).toContainText('+70 XP');\n     |             ^\n  28 |  await page.locator('#result-home').click();await expect(page.locator('[data-lesson=\"a1-2\"]')).toBeEnabled();await expect(page.locator('[data-lesson=\"a1-3\"]')).toBeDisabled();\n  29 |  await page.locator('[data-lesson=\"a1-1\"]').click();await solve(page);await expect(page.locator('.result-metrics')).toContainText('+0 XP');\n  30 |  await page.getByRole('button',{name:'Activer le thème sombre'}).click();await page.reload();await expect(page.locator('html')).toHaveAttribute('data-theme','dark');await expect(page.locator('.xp-pill')).toContainText('70');\n    at C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts:27:13"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:53:19.149Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\test-results\\speakora-lesson-success-re-41c90-ess-persistence-and-failure\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\test-results\\speakora-lesson-success-re-41c90-ess-persistence-and-failure\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                    "column": 13,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74bae95ea538435aa005-c9eebe98e22bc4d82410",
+          "file": "speakora.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "all 15 lessons and all four exercise formats can be completed",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 26131,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://speakora.morashawiri.com/app\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/app\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://speakora.morashawiri.com/app\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/app\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts:34:13",
+                    "location": {
+                      "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                      "column": 13,
+                      "line": 34
+                    },
+                    "snippet": "  32 | });\n  33 | test('all 15 lessons and all four exercise formats can be completed',async({page})=>{\n> 34 |  await page.goto('/app');\n     |             ^\n  35 |  for(const lesson of lessons){await page.locator(`[data-level=\"${lesson.id.split('-')[0].toUpperCase()}\"]`).click();await page.locator(`[data-lesson=\"${lesson.id}\"]`).click();await solve(page,lesson.id);await expect(page.locator('.result-card')).toContainText('100');await page.locator('#result-home').click();}\n  36 |  await expect(page.locator('.xp-pill')).toContainText('1120');await expect(page.locator('.overall-card')).toContainText('100');\n  37 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                        "column": 13,
+                        "line": 34
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://speakora.morashawiri.com/app\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/app\", waiting until \"load\"\u001b[22m\n\n\n  32 | });\n  33 | test('all 15 lessons and all four exercise formats can be completed',async({page})=>{\n> 34 |  await page.goto('/app');\n     |             ^\n  35 |  for(const lesson of lessons){await page.locator(`[data-level=\"${lesson.id.split('-')[0].toUpperCase()}\"]`).click();await page.locator(`[data-lesson=\"${lesson.id}\"]`).click();await solve(page,lesson.id);await expect(page.locator('.result-card')).toContainText('100');await page.locator('#result-home').click();}\n  36 |  await expect(page.locator('.xp-pill')).toContainText('1120');await expect(page.locator('.overall-card')).toContainText('100');\n  37 | });\n    at C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts:34:13"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:53:51.802Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\test-results\\speakora-all-15-lessons-an-45603-se-formats-can-be-completed\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\test-results\\speakora-all-15-lessons-an-45603-se-formats-can-be-completed\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                    "column": 13,
+                    "line": 34
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74bae95ea538435aa005-7e890ebf077abc9d301b",
+          "file": "speakora.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "pause after checking an answer never counts it twice; reload resumes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 22332,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://speakora.morashawiri.com/app\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/app\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://speakora.morashawiri.com/app\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/app\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts:39:13",
+                    "location": {
+                      "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                      "column": 13,
+                      "line": 39
+                    },
+                    "snippet": "  37 | });\n  38 | test('pause after checking an answer never counts it twice; reload resumes',async({page})=>{\n> 39 |  await page.goto('/app');await page.locator('#continue').click();await page.locator('[data-answer=\"0\"]').click();await page.locator('#check').click();await page.locator('#quit').click();await page.getByRole('button',{name:'Mettre en pause',exact:true}).click();await page.reload();await page.locator('#continue').click();await solve(page);await expect(page.locator('.result-metrics')).toContainText('+70 XP');\n     |             ^\n  40 | });\n  41 | test('audio fallback, validated import, export and reset confirmation',async({page})=>{\n  42 |  await page.goto('/app');await page.locator('.sidebar [data-nav=\"settings\"]').click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                        "column": 13,
+                        "line": 39
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://speakora.morashawiri.com/app\nCall log:\n\u001b[2m  - navigating to \"https://speakora.morashawiri.com/app\", waiting until \"load\"\u001b[22m\n\n\n  37 | });\n  38 | test('pause after checking an answer never counts it twice; reload resumes',async({page})=>{\n> 39 |  await page.goto('/app');await page.locator('#continue').click();await page.locator('[data-answer=\"0\"]').click();await page.locator('#check').click();await page.locator('#quit').click();await page.getByRole('button',{name:'Mettre en pause',exact:true}).click();await page.reload();await page.locator('#continue').click();await solve(page);await expect(page.locator('.result-metrics')).toContainText('+70 XP');\n     |             ^\n  40 | });\n  41 | test('audio fallback, validated import, export and reset confirmation',async({page})=>{\n  42 |  await page.goto('/app');await page.locator('.sidebar [data-nav=\"settings\"]').click();\n    at C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts:39:13"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:54:25.291Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\test-results\\speakora-pause-after-check-c04b8-nts-it-twice-reload-resumes\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\test-results\\speakora-pause-after-check-c04b8-nts-it-twice-reload-resumes\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                    "column": 13,
+                    "line": 39
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74bae95ea538435aa005-0b629c8bc7c1cbb8a58a",
+          "file": "speakora.spec.ts",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "audio fallback, validated import, export and reset confirmation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33376,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:54:50.012Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74bae95ea538435aa005-57074a7053963f171820",
+          "file": "speakora.spec.ts",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "offline reload, new tab, lesson and persisted progress; manifest icons",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17948,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:55:23.806Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74bae95ea538435aa005-d13213b7cc5c8b906e84",
+          "file": "speakora.spec.ts",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "mobile app screens have no horizontal overflow and keyboard controls work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16198,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:55:41.823Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74bae95ea538435aa005-16171f60f3d63f945be4",
+          "file": "speakora.spec.ts",
+          "line": 55,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-29T14:50:35.440Z",
+    "duration": 322938.284,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

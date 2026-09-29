@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-29T14:38:03.518Z",
+  "origin": "https://speakora.morashawiri.com",
+  "profileIsolated": true,
+  "manifestName": "Speakora",
+  "shortName": "Speakora",
+  "manifestErrors": [],
+  "installability": {
+    "installabilityErrors": []
+  },
+  "installed": true,
+  "osState": {
+    "badgeCount": 0,
+    "fileHandlers": []
+  },
+  "launch": {
+    "targetId": "52923CB191278566D468E5E4C4EEB22D"
+  },
+  "app": {
+    "title": "Speakora",
+    "url": "https://speakora.morashawiri.com/app",
+    "standalone": true,
+    "logo": "/brand/logo.webp"
+  },
+  "installedTarget": {
+    "targetId": "52923CB191278566D468E5E4C4EEB22D",
+    "type": "tab",
+    "title": "Speakora",
+    "url": "https://speakora.morashawiri.com/app",
+    "attached": false,
+    "canAccessOpener": false,
+    "browserContextId": "8D40F2D8EDD482DF98740F8FA162F6D5",
+    "embedderData": {
+      "tabActive": true,
+      "tabPinned": false,
+      "tabStripIndex": 0
+    }
+  }
+}

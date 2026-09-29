@@ -1,0 +1,17 @@
+{
+  "officialHorizontalUnchanged": true,
+  "officialSquareUnchanged": true,
+  "captures": [
+    "Sur PC/01-landing.png",
+    "Sur PC/02-parcours-sombre.png",
+    "Sur PC/03-contact.png",
+    "Sur Mobile/01-lecon.png",
+    "Sur Mobile/02-resultat.png"
+  ],
+  "posters": [
+    "01-apprendre.png",
+    "02-hors-connexion.png"
+  ],
+  "installedIconVisuallyVerified": true,
+  "desktopShortcutName": "Speakora"
+}

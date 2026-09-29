@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-29T14:36:47.677Z",
+  "origin": "https://speakora.morashawiri.com",
+  "checks": [
+    {
+      "name": "GET signed token",
+      "status": 200,
+      "cacheControl": "no-store"
+    },
+    {
+      "name": "missing token",
+      "status": 403
+    },
+    {
+      "name": "invalid fields",
+      "status": 400
+    },
+    {
+      "name": "honeypot",
+      "status": 400
+    },
+    {
+      "name": "cross origin",
+      "status": 403
+    }
+  ],
+  "liveEmail": {
+    "authorized": true,
+    "submissions": 1,
+    "status": 200,
+    "feedback": "Votre message a bien été transmis à MORA Shawiri. Merci pour votre retour !",
+    "acceptedBySMTP": true,
+    "inboxReceiptIndependentlyVerified": false
+  }
+}

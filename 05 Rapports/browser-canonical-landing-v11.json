@@ -1,0 +1,156 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--grep",
+      "landing SEO"
+    ],
+    "configFile": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\playwright.config.ts",
+    "rootDir": "C:/Users/HP/Desktop/IDE MORA Shawiri/Speakora/03 Codes/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/HP/Desktop/IDE MORA Shawiri/Speakora/03 Codes/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/HP/Desktop/IDE MORA Shawiri/Speakora/03 Codes/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../05 Rapports/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "speakora.spec.ts",
+      "file": "speakora.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "landing SEO, exact CTA links, images, mobile menu and responsive",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 14872,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts:23:178",
+                    "location": {
+                      "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                      "column": 178,
+                      "line": 23
+                    },
+                    "snippet": "  21 |  await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Ouvrir le menu'}).click();await expect(page.locator('#navigation')).toHaveClass(/open/);await page.locator('#navigation').getByRole('link',{name:'FAQ',exact:true}).click();await expect(page.locator('#navigation')).not.toHaveClass(/open/);\n  22 |  await page.locator('details').first().locator('summary').click();await expect(page.locator('details').first()).toHaveAttribute('open','');\n> 23 |  for(const img of await page.locator('img').all()){await img.scrollIntoViewIfNeeded();await expect.poll(()=>img.evaluate((el:HTMLImageElement)=>el.complete&&el.naturalWidth>0)).toBe(true);}\n     |                                                                                                                                                                                  ^\n  24 |  const broken=await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>!(i as HTMLImageElement).complete||!(i as HTMLImageElement).naturalWidth).length);expect(broken).toBe(0);expect(errors).toEqual([]);\n  25 | });\n  26 | test('lesson success, replay cap, theme, progress persistence and failure',async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                        "column": 178,
+                        "line": 23
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  21 |  await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Ouvrir le menu'}).click();await expect(page.locator('#navigation')).toHaveClass(/open/);await page.locator('#navigation').getByRole('link',{name:'FAQ',exact:true}).click();await expect(page.locator('#navigation')).not.toHaveClass(/open/);\n  22 |  await page.locator('details').first().locator('summary').click();await expect(page.locator('details').first()).toHaveAttribute('open','');\n> 23 |  for(const img of await page.locator('img').all()){await img.scrollIntoViewIfNeeded();await expect.poll(()=>img.evaluate((el:HTMLImageElement)=>el.complete&&el.naturalWidth>0)).toBe(true);}\n     |                                                                                                                                                                                  ^\n  24 |  const broken=await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>!(i as HTMLImageElement).complete||!(i as HTMLImageElement).naturalWidth).length);expect(broken).toBe(0);expect(errors).toEqual([]);\n  25 | });\n  26 | test('lesson success, replay cap, theme, progress persistence and failure',async({page})=>{\n    at C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts:23:178"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-29T14:59:10.680Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\test-results\\speakora-landing-SEO-exact-fa4fa--mobile-menu-and-responsive\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\test-results\\speakora-landing-SEO-exact-fa4fa--mobile-menu-and-responsive\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\HP\\Desktop\\IDE MORA Shawiri\\Speakora\\03 Codes\\e2e\\speakora.spec.ts",
+                    "column": 178,
+                    "line": 23
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74bae95ea538435aa005-646bed87d9e9e2e5b9dd",
+          "file": "speakora.spec.ts",
+          "line": 14,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-29T14:58:55.806Z",
+    "duration": 77336.319,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

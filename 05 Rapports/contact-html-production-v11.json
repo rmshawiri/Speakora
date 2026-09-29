@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-29T14:50:05.483Z",
+  "origin": "https://speakora.morashawiri.com",
+  "submissions": 1,
+  "status": 200,
+  "sentAt": "2026-09-29T14:50:01.425Z",
+  "feedback": "Votre message a bien été transmis à MORA Shawiri. Merci pour votre retour !",
+  "acceptedBySMTP": true,
+  "subject": "[Speakora] Une idée ou un retour",
+  "senderName": "Speakora — MORA Shawiri",
+  "template": "server/contact-email.mjs",
+  "inboxReceiptIndependentlyVerified": false
+}

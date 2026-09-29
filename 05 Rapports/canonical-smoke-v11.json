@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-29T15:05:22.209Z",
+  "origin": "https://speakora.morashawiri.com",
+  "images": [
+    {
+      "src": "/brand/logo.webp",
+      "loaded": true
+    },
+    {
+      "src": "/brand/logo.webp",
+      "loaded": true
+    },
+    {
+      "src": "/brand/mora.png",
+      "loaded": true
+    },
+    {
+      "src": "/brand/logo.webp",
+      "loaded": true
+    }
+  ],
+  "ctas": [
+    "https://morashawiri.com/acceder-a-speakora/",
+    "https://morashawiri.com/acceder-a-speakora/",
+    "https://morashawiri.com/acceder-a-speakora/"
+  ],
+  "contactFormPresent": true,
+  "horizontalOverflow": false,
+  "browserErrors": []
+}

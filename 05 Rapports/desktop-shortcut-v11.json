@@ -1,0 +1,7 @@
+{
+  "Name": "Speakora",
+  "Target": "C:\\Program Files\\Google\\Chrome\\Application\\chrome_proxy.exe",
+  "Arguments": " --profile-directory=\"Profile 1\" --app-id=obggodakijjjcpgbkjpkgbhnpnjhlged",
+  "IconExists": true,
+  "ProgressDataUntouched": true
+}

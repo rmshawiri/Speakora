@@ -1,0 +1,22 @@
+{
+  "htmlBytes": 5809,
+  "date": "2026-09-29T14:50:01.425Z",
+  "checks": [
+    {
+      "width": 760,
+      "overflow": false,
+      "externalRequests": 0
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "externalRequests": 0
+    },
+    {
+      "width": 320,
+      "longMessageCharacters": 5000,
+      "overflow": false
+    }
+  ],
+  "renderEngine": "Chromium — aperçu du HTML, pas une capture Gmail ou Outlook"
+}
