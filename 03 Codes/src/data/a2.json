@@ -1,0 +1,240 @@
+{
+  "id": "A2",
+  "name": "Débutant",
+  "description": "Quotidien, restaurant, prétérit et premières descriptions.",
+  "lessons": [
+    {
+      "id": "a2-1",
+      "title": "Le quotidien",
+      "category": "Anglais du quotidien",
+      "tip": "Au présent simple, ajoutez généralement -s au verbe avec he, she et it : « She works ».",
+      "exercises": [
+        {
+          "id": "a2-1-1",
+          "type": "choice",
+          "prompt": "Comment dit-on « Se réveiller » ?",
+          "options": [
+            "to wake up",
+            "to go out",
+            "to sit down",
+            "to look up"
+          ],
+          "answer": 0,
+          "explanation": "Au présent simple, ajoutez généralement -s au verbe avec he, she et it : « She works »."
+        },
+        {
+          "id": "a2-1-2",
+          "type": "fill",
+          "prompt": "He ___ to work at 8 a.m.",
+          "options": [
+            "goes",
+            "go",
+            "going",
+            "gone"
+          ],
+          "answer": 0,
+          "explanation": "Au présent simple, ajoutez généralement -s au verbe avec he, she et it : « She works »."
+        },
+        {
+          "id": "a2-1-3",
+          "type": "choice",
+          "prompt": "« Je prends généralement mon petit-déjeuner à 7h. »",
+          "options": [
+            "I usually have breakfast at 7.",
+            "I usually have lunch at 7.",
+            "I never have breakfast at 7.",
+            "I am usually breakfast at 7."
+          ],
+          "answer": 0,
+          "explanation": "Au présent simple, ajoutez généralement -s au verbe avec he, she et it : « She works »."
+        },
+        {
+          "id": "a2-1-4",
+          "type": "listen",
+          "prompt": "I go to bed at ten o'clock",
+          "options": [
+            "I go to bed at ten o'clock",
+            "I go to bed at seven o'clock",
+            "I get up at ten o'clock",
+            "I go home at ten o'clock"
+          ],
+          "answer": 0,
+          "explanation": "Au présent simple, ajoutez généralement -s au verbe avec he, she et it : « She works »."
+        },
+        {
+          "id": "a2-1-5",
+          "type": "order",
+          "prompt": "Traduisez : « Elle travaille tous les jours. »",
+          "words": [
+            "She",
+            "works",
+            "every",
+            "day"
+          ],
+          "answer": "She works every day",
+          "explanation": "Au présent simple, ajoutez généralement -s au verbe avec he, she et it : « She works »."
+        }
+      ]
+    },
+    {
+      "id": "a2-2",
+      "title": "Au restaurant",
+      "category": "Anglais du quotidien",
+      "tip": "« I would like… » est une façon polie de commander. « Can I have…? » permet de demander quelque chose.",
+      "exercises": [
+        {
+          "id": "a2-2-1",
+          "type": "choice",
+          "prompt": "« Je voudrais un café, s'il vous plaît. »",
+          "options": [
+            "I would like a coffee, please.",
+            "I like a coffee, please.",
+            "I want coffee, ok?",
+            "I am a coffee, please."
+          ],
+          "answer": 0,
+          "explanation": "« I would like… » est une façon polie de commander. « Can I have…? » permet de demander quelque chose."
+        },
+        {
+          "id": "a2-2-2",
+          "type": "fill",
+          "prompt": "Can I ___ the menu, please?",
+          "options": [
+            "have",
+            "has",
+            "had",
+            "having"
+          ],
+          "answer": 0,
+          "explanation": "« I would like… » est une façon polie de commander. « Can I have…? » permet de demander quelque chose."
+        },
+        {
+          "id": "a2-2-3",
+          "type": "choice",
+          "prompt": "« L'addition, s'il vous plaît. »",
+          "options": [
+            "The bill, please.",
+            "The menu, please.",
+            "The water, please.",
+            "The waiter, please."
+          ],
+          "answer": 0,
+          "explanation": "« I would like… » est une façon polie de commander. « Can I have…? » permet de demander quelque chose."
+        },
+        {
+          "id": "a2-2-4",
+          "type": "listen",
+          "prompt": "A table for two, please",
+          "options": [
+            "A table for two, please",
+            "A table for you, please",
+            "A taxi for two, please",
+            "A ticket for two, please"
+          ],
+          "answer": 0,
+          "explanation": "« I would like… » est une façon polie de commander. « Can I have…? » permet de demander quelque chose."
+        },
+        {
+          "id": "a2-2-5",
+          "type": "order",
+          "prompt": "Traduisez : « Je voudrais de l'eau. »",
+          "words": [
+            "I",
+            "would",
+            "like",
+            "some",
+            "water"
+          ],
+          "answer": "I would like some water",
+          "explanation": "« I would like… » est une façon polie de commander. « Can I have…? » permet de demander quelque chose."
+        }
+      ]
+    },
+    {
+      "id": "a2-3",
+      "title": "Le passé",
+      "category": "Anglais du quotidien",
+      "tip": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw.",
+      "exercises": [
+        {
+          "id": "a2-3-1",
+          "type": "fill",
+          "prompt": "I ___ to London last year.",
+          "options": [
+            "went",
+            "go",
+            "goes",
+            "going"
+          ],
+          "answer": 0,
+          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+        },
+        {
+          "id": "a2-3-2",
+          "type": "choice",
+          "prompt": "« Elle a regardé un film hier. »",
+          "options": [
+            "She watched a movie yesterday.",
+            "She watches a movie yesterday.",
+            "She watch a movie yesterday.",
+            "She is watching a movie yesterday."
+          ],
+          "answer": 0,
+          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+        },
+        {
+          "id": "a2-3-3",
+          "type": "fill",
+          "prompt": "They ___ football on Saturday.",
+          "options": [
+            "played",
+            "play",
+            "plays",
+            "playing"
+          ],
+          "answer": 0,
+          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+        },
+        {
+          "id": "a2-3-4",
+          "type": "listen",
+          "prompt": "We visited the museum last week",
+          "options": [
+            "We visited the museum last week",
+            "We visited the museum next week",
+            "We visited the park last week",
+            "We wanted the museum last week"
+          ],
+          "answer": 0,
+          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+        },
+        {
+          "id": "a2-3-5",
+          "type": "choice",
+          "prompt": "« Il n'est pas venu. »",
+          "options": [
+            "He didn't come.",
+            "He doesn't come.",
+            "He isn't come.",
+            "He not came."
+          ],
+          "answer": 0,
+          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+        },
+        {
+          "id": "a2-3-6",
+          "type": "order",
+          "prompt": "Traduisez : « J'ai vu un chien. »",
+          "words": [
+            "I",
+            "saw",
+            "a",
+            "dog"
+          ],
+          "answer": "I saw a dog",
+          "explanation": "Le prétérit décrit une action passée terminée. Certains verbes sont irréguliers : go → went, see → saw."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+import './styles.css';
+import './pwa';
+import { icon } from './core/ui';
+document.querySelectorAll<HTMLElement>('[data-icon]').forEach(el=>el.innerHTML=icon(el.dataset.icon!,Number(el.dataset.size)||22));
+const menu=document.querySelector<HTMLButtonElement>('#menu-button')!;
+const nav=document.querySelector<HTMLElement>('#navigation')!;
+menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.focus();}});
+document.querySelector('#year')!.textContent=String(new Date().getFullYear());

@@ -1,0 +1,257 @@
+{
+  "id": "C1",
+  "name": "Avancé",
+  "description": "Vocabulaire soutenu, inversions et nuances de registre.",
+  "lessons": [
+    {
+      "id": "c1-1",
+      "title": "Vocabulaire soutenu",
+      "category": "Nuances et registre",
+      "tip": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi.",
+      "exercises": [
+        {
+          "id": "c1-1-1",
+          "type": "choice",
+          "prompt": "Que signifie « meticulous » ?",
+          "options": [
+            "Extrêmement minutieux",
+            "Très paresseux",
+            "Plutôt maladroit",
+            "Assez arrogant"
+          ],
+          "answer": 0,
+          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+        },
+        {
+          "id": "c1-1-2",
+          "type": "choice",
+          "prompt": "Que signifie « to undermine » ?",
+          "options": [
+            "Saper, affaiblir",
+            "Souligner fortement",
+            "Passer sous silence",
+            "Rénover complètement"
+          ],
+          "answer": 0,
+          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+        },
+        {
+          "id": "c1-1-3",
+          "type": "fill",
+          "prompt": "Her explanation was so ___ that everyone understood immediately.",
+          "options": [
+            "lucid",
+            "lurid",
+            "lush",
+            "lank"
+          ],
+          "answer": 0,
+          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+        },
+        {
+          "id": "c1-1-4",
+          "type": "choice",
+          "prompt": "Que signifie « a thorough analysis » ?",
+          "options": [
+            "Une analyse approfondie",
+            "Une analyse rapide",
+            "Une analyse erronée",
+            "Une analyse coûteuse"
+          ],
+          "answer": 0,
+          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+        },
+        {
+          "id": "c1-1-5",
+          "type": "listen",
+          "prompt": "The evidence corroborates his testimony",
+          "options": [
+            "The evidence corroborates his testimony",
+            "The evidence contradicts his testimony",
+            "The evidence collects his testimony",
+            "The evidence considers his testimony"
+          ],
+          "answer": 0,
+          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+        },
+        {
+          "id": "c1-1-6",
+          "type": "order",
+          "prompt": "Traduisez : « La proposition a été jugée irréalisable. »",
+          "words": [
+            "The",
+            "proposal",
+            "was",
+            "deemed",
+            "unfeasible."
+          ],
+          "answer": "The proposal was deemed unfeasible.",
+          "explanation": "Un registre soutenu permet de préciser sa pensée : lucid = clair ; meticulous = minutieux ; thorough = approfondi."
+        }
+      ]
+    },
+    {
+      "id": "c1-2",
+      "title": "Structures complexes",
+      "category": "Nuances et registre",
+      "tip": "Après certaines expressions négatives en début de phrase, on inverse auxiliaire et sujet : « Rarely have I… ».",
+      "exercises": [
+        {
+          "id": "c1-2-1",
+          "type": "fill",
+          "prompt": "Rarely ___ such a breathtaking sunset.",
+          "options": [
+            "have I seen",
+            "I have seen",
+            "I saw",
+            "I had seen"
+          ],
+          "answer": 0,
+          "explanation": "Après certaines expressions négatives en début de phrase, on inverse auxiliaire et sujet : « Rarely have I… »."
+        },
+        {
+          "id": "c1-2-2",
+          "type": "fill",
+          "prompt": "It's high time we ___.",
+          "options": [
+            "left",
+            "leave",
+            "will leave",
+            "have left"
+          ],
+          "answer": 0,
+          "explanation": "Après certaines expressions négatives en début de phrase, on inverse auxiliaire et sujet : « Rarely have I… »."
+        },
+        {
+          "id": "c1-2-3",
+          "type": "choice",
+          "prompt": "« Si j'avais su, je serais venu. »",
+          "options": [
+            "Had I known, I would have come.",
+            "If I had known, I would come.",
+            "Had I known, I would have came.",
+            "If I knew, I would have come."
+          ],
+          "answer": 0,
+          "explanation": "Après certaines expressions négatives en début de phrase, on inverse auxiliaire et sujet : « Rarely have I… »."
+        },
+        {
+          "id": "c1-2-4",
+          "type": "listen",
+          "prompt": "Not only did she win, but she also broke the record",
+          "options": [
+            "Not only did she win, but she also broke the record",
+            "Not only she won, but she also broke the record",
+            "Not only did she win, but she also lost the record",
+            "Only did she win, but she also broke the record"
+          ],
+          "answer": 0,
+          "explanation": "Après certaines expressions négatives en début de phrase, on inverse auxiliaire et sujet : « Rarely have I… »."
+        },
+        {
+          "id": "c1-2-5",
+          "type": "order",
+          "prompt": "Traduisez : « Bien peu savait-il ce qui l'attendait. »",
+          "words": [
+            "Little",
+            "did",
+            "he",
+            "know",
+            "what",
+            "awaited",
+            "him."
+          ],
+          "answer": "Little did he know what awaited him.",
+          "explanation": "Après certaines expressions négatives en début de phrase, on inverse auxiliaire et sujet : « Rarely have I… »."
+        }
+      ]
+    },
+    {
+      "id": "c1-3",
+      "title": "Expressions avancées",
+      "category": "Nuances et registre",
+      "tip": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie.",
+      "exercises": [
+        {
+          "id": "c1-3-1",
+          "type": "choice",
+          "prompt": "Que signifie « to beat around the bush » ?",
+          "options": [
+            "Tourner autour du pot",
+            "Casser une branche",
+            "Blesser quelqu'un",
+            "Se mettre en colère"
+          ],
+          "answer": 0,
+          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+        },
+        {
+          "id": "c1-3-2",
+          "type": "choice",
+          "prompt": "Que signifie « the elephant in the room » ?",
+          "options": [
+            "Le sujet évident que personne n'ose aborder",
+            "Un très gros animal domestique",
+            "Un souvenir d'enfance",
+            "Une pièce trop encombrée"
+          ],
+          "answer": 0,
+          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+        },
+        {
+          "id": "c1-3-3",
+          "type": "fill",
+          "prompt": "She's over the ___ about her promotion.",
+          "options": [
+            "moon",
+            "sun",
+            "earth",
+            "cloud"
+          ],
+          "answer": 0,
+          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+        },
+        {
+          "id": "c1-3-4",
+          "type": "listen",
+          "prompt": "That argument doesn't hold water",
+          "options": [
+            "That argument doesn't hold water",
+            "That argument doesn't hold firm",
+            "That argument doesn't hold hands",
+            "That argument doesn't pour water"
+          ],
+          "answer": 0,
+          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+        },
+        {
+          "id": "c1-3-5",
+          "type": "choice",
+          "prompt": "Que signifie « a blessing in disguise » ?",
+          "options": [
+            "Une chance déguisée",
+            "Une malédiction",
+            "Un simple déguisement",
+            "Une bénédiction religieuse"
+          ],
+          "answer": 0,
+          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+        },
+        {
+          "id": "c1-3-6",
+          "type": "order",
+          "prompt": "Traduisez : « C'est une chance déguisée. »",
+          "words": [
+            "It's",
+            "a",
+            "blessing",
+            "in",
+            "disguise."
+          ],
+          "answer": "It's a blessing in disguise.",
+          "explanation": "Les expressions imagées ajoutent des nuances : « over the moon » exprime une grande joie."
+        }
+      ]
+    }
+  ]
+}

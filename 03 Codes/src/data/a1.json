@@ -1,0 +1,238 @@
+{
+  "id": "A1",
+  "name": "Très débutant",
+  "description": "Salutations, chiffres, couleurs, famille et premières phrases.",
+  "lessons": [
+    {
+      "id": "a1-1",
+      "title": "Salutations & politesse",
+      "category": "Vocabulaire et grammaire",
+      "tip": "Pour se présenter : « I am… ». Pour saluer : « Hello ». Pour remercier : « Thank you ».",
+      "exercises": [
+        {
+          "id": "a1-1-1",
+          "type": "choice",
+          "prompt": "Comment dit-on « Bonjour » ?",
+          "options": [
+            "Hello",
+            "Goodbye",
+            "Thank you",
+            "Sorry"
+          ],
+          "answer": 0,
+          "explanation": "Pour se présenter : « I am… ». Pour saluer : « Hello ». Pour remercier : « Thank you »."
+        },
+        {
+          "id": "a1-1-2",
+          "type": "choice",
+          "prompt": "Comment dit-on « Au revoir » ?",
+          "options": [
+            "Please",
+            "Goodbye",
+            "Welcome",
+            "Thank you"
+          ],
+          "answer": 1,
+          "explanation": "Pour se présenter : « I am… ». Pour saluer : « Hello ». Pour remercier : « Thank you »."
+        },
+        {
+          "id": "a1-1-3",
+          "type": "fill",
+          "prompt": "I ___ John.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "answer": 0,
+          "explanation": "Pour se présenter : « I am… ». Pour saluer : « Hello ». Pour remercier : « Thank you »."
+        },
+        {
+          "id": "a1-1-4",
+          "type": "listen",
+          "prompt": "Nice to meet you",
+          "options": [
+            "Nice to meet you",
+            "Nice to meet you too",
+            "How are you?",
+            "My name is John"
+          ],
+          "answer": 0,
+          "explanation": "Pour se présenter : « I am… ». Pour saluer : « Hello ». Pour remercier : « Thank you »."
+        },
+        {
+          "id": "a1-1-5",
+          "type": "order",
+          "prompt": "Traduisez : « Je vais bien. »",
+          "words": [
+            "I",
+            "am",
+            "fine"
+          ],
+          "answer": "I am fine",
+          "explanation": "Pour se présenter : « I am… ». Pour saluer : « Hello ». Pour remercier : « Thank you »."
+        }
+      ]
+    },
+    {
+      "id": "a1-2",
+      "title": "Chiffres & couleurs",
+      "category": "Vocabulaire et grammaire",
+      "tip": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel.",
+      "exercises": [
+        {
+          "id": "a1-2-1",
+          "type": "choice",
+          "prompt": "Comment dit-on « Rouge » ?",
+          "options": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
+          ],
+          "answer": 0,
+          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+        },
+        {
+          "id": "a1-2-2",
+          "type": "choice",
+          "prompt": "Que signifie « Seven » ?",
+          "options": [
+            "Cinq",
+            "Six",
+            "Sept",
+            "Huit"
+          ],
+          "answer": 2,
+          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+        },
+        {
+          "id": "a1-2-3",
+          "type": "fill",
+          "prompt": "Complétez avec « bleu » : The sky is ___.",
+          "options": [
+            "blue",
+            "red",
+            "pink",
+            "black"
+          ],
+          "answer": 0,
+          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+        },
+        {
+          "id": "a1-2-4",
+          "type": "choice",
+          "prompt": "Comment dit-on « Trois » ?",
+          "options": [
+            "Three",
+            "Tree",
+            "Ten",
+            "Two"
+          ],
+          "answer": 0,
+          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+        },
+        {
+          "id": "a1-2-5",
+          "type": "listen",
+          "prompt": "I have three green apples",
+          "options": [
+            "I have three green apples",
+            "I have three red apples",
+            "I have two green apples",
+            "I have three green trees"
+          ],
+          "answer": 0,
+          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+        },
+        {
+          "id": "a1-2-6",
+          "type": "order",
+          "prompt": "Traduisez : « L'herbe est verte. »",
+          "words": [
+            "The",
+            "grass",
+            "is",
+            "green"
+          ],
+          "answer": "The grass is green",
+          "explanation": "Les couleurs se placent avant le nom : « green apples ». Les nombres ne prennent pas de pluriel."
+        }
+      ]
+    },
+    {
+      "id": "a1-3",
+      "title": "La famille",
+      "category": "Vocabulaire et grammaire",
+      "tip": "Avec I, utilisez am ; avec he ou she, is ; avec you, we ou they, are.",
+      "exercises": [
+        {
+          "id": "a1-3-1",
+          "type": "choice",
+          "prompt": "Comment dit-on « Ma mère » ?",
+          "options": [
+            "My mother",
+            "My father",
+            "My sister",
+            "My brother"
+          ],
+          "answer": 0,
+          "explanation": "Avec I, utilisez am ; avec he ou she, is ; avec you, we ou they, are."
+        },
+        {
+          "id": "a1-3-2",
+          "type": "choice",
+          "prompt": "Que signifie « Brother » ?",
+          "options": [
+            "Père",
+            "Frère",
+            "Fils",
+            "Oncle"
+          ],
+          "answer": 1,
+          "explanation": "Avec I, utilisez am ; avec he ou she, is ; avec you, we ou they, are."
+        },
+        {
+          "id": "a1-3-3",
+          "type": "fill",
+          "prompt": "She ___ my sister.",
+          "options": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "answer": 0,
+          "explanation": "Avec I, utilisez am ; avec he ou she, is ; avec you, we ou they, are."
+        },
+        {
+          "id": "a1-3-4",
+          "type": "listen",
+          "prompt": "This is my father",
+          "options": [
+            "This is my father",
+            "This is my mother",
+            "This is my brother",
+            "That is my father"
+          ],
+          "answer": 0,
+          "explanation": "Avec I, utilisez am ; avec he ou she, is ; avec you, we ou they, are."
+        },
+        {
+          "id": "a1-3-5",
+          "type": "order",
+          "prompt": "Traduisez : « Mon frère est grand. »",
+          "words": [
+            "My",
+            "brother",
+            "is",
+            "tall"
+          ],
+          "answer": "My brother is tall",
+          "explanation": "Avec I, utilisez am ; avec he ou she, is ; avec you, we ou they, are."
+        }
+      ]
+    }
+  ]
+}

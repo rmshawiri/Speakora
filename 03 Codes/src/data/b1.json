@@ -1,0 +1,257 @@
+{
+  "id": "B1",
+  "name": "Intermédiaire",
+  "description": "Present perfect, verbes à particule et exprimer le futur.",
+  "lessons": [
+    {
+      "id": "b1-1",
+      "title": "Present Perfect",
+      "category": "Grammaire et expression",
+      "tip": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée.",
+      "exercises": [
+        {
+          "id": "b1-1-1",
+          "type": "fill",
+          "prompt": "I ___ never been to Japan.",
+          "options": [
+            "have",
+            "has",
+            "had",
+            "am"
+          ],
+          "answer": 0,
+          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+        },
+        {
+          "id": "b1-1-2",
+          "type": "choice",
+          "prompt": "« Elle vit ici depuis 2010. »",
+          "options": [
+            "She has lived here since 2010.",
+            "She lives here since 2010.",
+            "She is living here since 2010.",
+            "She has lived here in 2010."
+          ],
+          "answer": 0,
+          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+        },
+        {
+          "id": "b1-1-3",
+          "type": "fill",
+          "prompt": "___ you finished your homework?",
+          "options": [
+            "Have",
+            "Has",
+            "Did",
+            "Are"
+          ],
+          "answer": 0,
+          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+        },
+        {
+          "id": "b1-1-4",
+          "type": "fill",
+          "prompt": "I have lived here ___ five years.",
+          "options": [
+            "for",
+            "since",
+            "during",
+            "ago"
+          ],
+          "answer": 0,
+          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+        },
+        {
+          "id": "b1-1-5",
+          "type": "listen",
+          "prompt": "I have just finished my work",
+          "options": [
+            "I have just finished my work",
+            "I just finished my homework",
+            "I have just started my work",
+            "I had just finished my work"
+          ],
+          "answer": 0,
+          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+        },
+        {
+          "id": "b1-1-6",
+          "type": "order",
+          "prompt": "Traduisez : « Nous nous connaissons depuis des années. »",
+          "words": [
+            "We",
+            "have",
+            "known",
+            "each",
+            "other",
+            "for",
+            "years"
+          ],
+          "answer": "We have known each other for years",
+          "explanation": "Le present perfect se forme avec have/has + participe passé. Since indique le point de départ ; for, la durée."
+        }
+      ]
+    },
+    {
+      "id": "b1-2",
+      "title": "Phrasal Verbs",
+      "category": "Grammaire et expression",
+      "tip": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de.",
+      "exercises": [
+        {
+          "id": "b1-2-1",
+          "type": "choice",
+          "prompt": "Que signifie « give up » ?",
+          "options": [
+            "Abandonner",
+            "Continuer",
+            "Commencer",
+            "Retarder"
+          ],
+          "answer": 0,
+          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+        },
+        {
+          "id": "b1-2-2",
+          "type": "choice",
+          "prompt": "« Je cherche mes clés. »",
+          "options": [
+            "I'm looking for my keys.",
+            "I'm looking after my keys.",
+            "I'm looking up my keys.",
+            "I'm looking at my keys."
+          ],
+          "answer": 0,
+          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+        },
+        {
+          "id": "b1-2-3",
+          "type": "fill",
+          "prompt": "It's getting dark. Please turn ___ the lights.",
+          "options": [
+            "on",
+            "off",
+            "up",
+            "down"
+          ],
+          "answer": 0,
+          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+        },
+        {
+          "id": "b1-2-4",
+          "type": "choice",
+          "prompt": "Que signifie « look after » ?",
+          "options": [
+            "S'occuper de",
+            "Regarder derrière",
+            "Chercher",
+            "Attendre"
+          ],
+          "answer": 0,
+          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+        },
+        {
+          "id": "b1-2-5",
+          "type": "listen",
+          "prompt": "Don't give up on your dreams",
+          "options": [
+            "Don't give up on your dreams",
+            "Don't give in on your dreams",
+            "Don't get up on your dreams",
+            "Don't take up your dreams"
+          ],
+          "answer": 0,
+          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+        },
+        {
+          "id": "b1-2-6",
+          "type": "order",
+          "prompt": "Traduisez : « Elle ressemble à sa mère. »",
+          "words": [
+            "She",
+            "takes",
+            "after",
+            "her",
+            "mother"
+          ],
+          "answer": "She takes after her mother",
+          "explanation": "Un verbe à particule change souvent de sens : look for = chercher ; look after = s’occuper de."
+        }
+      ]
+    },
+    {
+      "id": "b1-3",
+      "title": "Le futur",
+      "category": "Grammaire et expression",
+      "tip": "Will peut exprimer une promesse ; be going to, une intention ou une prévision fondée sur un indice.",
+      "exercises": [
+        {
+          "id": "b1-3-1",
+          "type": "fill",
+          "prompt": "Don't worry, I ___ help you tomorrow.",
+          "options": [
+            "will",
+            "am",
+            "was",
+            "been"
+          ],
+          "answer": 0,
+          "explanation": "Will peut exprimer une promesse ; be going to, une intention ou une prévision fondée sur un indice."
+        },
+        {
+          "id": "b1-3-2",
+          "type": "choice",
+          "prompt": "« Nous allons voyager en Espagne. »",
+          "options": [
+            "We are going to travel to Spain.",
+            "We go to travel to Spain.",
+            "We are go to travel to Spain.",
+            "We will going to travel to Spain."
+          ],
+          "answer": 0,
+          "explanation": "Will peut exprimer une promesse ; be going to, une intention ou une prévision fondée sur un indice."
+        },
+        {
+          "id": "b1-3-3",
+          "type": "fill",
+          "prompt": "Look at those clouds! It ___ rain.",
+          "options": [
+            "is going to",
+            "going",
+            "will to",
+            "is go"
+          ],
+          "answer": 0,
+          "explanation": "On utilise be going to pour une prévision appuyée par un indice visible."
+        },
+        {
+          "id": "b1-3-4",
+          "type": "listen",
+          "prompt": "It's going to rain tomorrow",
+          "options": [
+            "It's going to rain tomorrow",
+            "It's going to snow tomorrow",
+            "It's going to rain today",
+            "It's going to be sunny tomorrow"
+          ],
+          "answer": 0,
+          "explanation": "Will peut exprimer une promesse ; be going to, une intention ou une prévision fondée sur un indice."
+        },
+        {
+          "id": "b1-3-5",
+          "type": "order",
+          "prompt": "Traduisez : « Ils arriveront la semaine prochaine. »",
+          "words": [
+            "They",
+            "will",
+            "arrive",
+            "next",
+            "week"
+          ],
+          "answer": "They will arrive next week",
+          "explanation": "Will peut exprimer une promesse ; be going to, une intention ou une prévision fondée sur un indice."
+        }
+      ]
+    }
+  ]
+}

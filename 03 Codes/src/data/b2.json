@@ -1,0 +1,243 @@
+{
+  "id": "B2",
+  "name": "Intermédiaire avancé",
+  "description": "Conditionnel, voix passive et expressions idiomatiques.",
+  "lessons": [
+    {
+      "id": "b2-1",
+      "title": "Le conditionnel",
+      "category": "Structures et expressions",
+      "tip": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé.",
+      "exercises": [
+        {
+          "id": "b2-1-1",
+          "type": "fill",
+          "prompt": "If I ___ rich, I would travel the world.",
+          "options": [
+            "were",
+            "am",
+            "will be",
+            "be"
+          ],
+          "answer": 0,
+          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+        },
+        {
+          "id": "b2-1-2",
+          "type": "choice",
+          "prompt": "« Si elle avait étudié, elle aurait réussi. »",
+          "options": [
+            "If she had studied, she would have passed.",
+            "If she studied, she would have passed.",
+            "If she has studied, she would passed.",
+            "If she would have studied, she had passed."
+          ],
+          "answer": 0,
+          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+        },
+        {
+          "id": "b2-1-3",
+          "type": "fill",
+          "prompt": "I would call you if I ___ your number.",
+          "options": [
+            "had",
+            "have",
+            "will have",
+            "would have"
+          ],
+          "answer": 0,
+          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+        },
+        {
+          "id": "b2-1-4",
+          "type": "listen",
+          "prompt": "If it rains tomorrow, we will stay at home",
+          "options": [
+            "If it rains tomorrow, we will stay at home",
+            "If it rains tomorrow, we will go out",
+            "If it rained tomorrow, we will stay at home",
+            "If it snows tomorrow, we will stay at home"
+          ],
+          "answer": 0,
+          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+        },
+        {
+          "id": "b2-1-5",
+          "type": "choice",
+          "prompt": "Que signifie « unless » ?",
+          "options": [
+            "À moins que",
+            "Parce que",
+            "Bien que",
+            "Pour que"
+          ],
+          "answer": 0,
+          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+        },
+        {
+          "id": "b2-1-6",
+          "type": "order",
+          "prompt": "Traduisez : « À ta place, je postulerais. »",
+          "words": [
+            "If",
+            "I",
+            "were",
+            "you,",
+            "I",
+            "would",
+            "apply."
+          ],
+          "answer": "If I were you, I would apply.",
+          "explanation": "If + prétérit, would + verbe : hypothèse. If + past perfect, would have + participe passé : regret passé."
+        }
+      ]
+    },
+    {
+      "id": "b2-2",
+      "title": "Voix passive",
+      "category": "Structures et expressions",
+      "tip": "La voix passive se forme avec be au temps voulu + participe passé : « was made », « is spoken ».",
+      "exercises": [
+        {
+          "id": "b2-2-1",
+          "type": "fill",
+          "prompt": "The cake ___ by my grandmother yesterday.",
+          "options": [
+            "was made",
+            "was make",
+            "is making",
+            "has made"
+          ],
+          "answer": 0,
+          "explanation": "La voix passive se forme avec be au temps voulu + participe passé : « was made », « is spoken »."
+        },
+        {
+          "id": "b2-2-2",
+          "type": "choice",
+          "prompt": "« La lettre a été envoyée. »",
+          "options": [
+            "The letter has been sent.",
+            "The letter has sent.",
+            "The letter is been sent.",
+            "The letter have been sent."
+          ],
+          "answer": 0,
+          "explanation": "La voix passive se forme avec be au temps voulu + participe passé : « was made », « is spoken »."
+        },
+        {
+          "id": "b2-2-3",
+          "type": "fill",
+          "prompt": "English ___ all over the world.",
+          "options": [
+            "is spoken",
+            "is speaking",
+            "speaks",
+            "spoken"
+          ],
+          "answer": 0,
+          "explanation": "La voix passive se forme avec be au temps voulu + participe passé : « was made », « is spoken »."
+        },
+        {
+          "id": "b2-2-4",
+          "type": "listen",
+          "prompt": "The bridge was built in 1900",
+          "options": [
+            "The bridge was built in 1900",
+            "The bridge was rebuilt in 1900",
+            "The bridge was built in 1910",
+            "The bridge burnt down in 1900"
+          ],
+          "answer": 0,
+          "explanation": "La voix passive se forme avec be au temps voulu + participe passé : « was made », « is spoken »."
+        },
+        {
+          "id": "b2-2-5",
+          "type": "order",
+          "prompt": "Traduisez : « La fenêtre a été cassée. »",
+          "words": [
+            "The",
+            "window",
+            "was",
+            "broken."
+          ],
+          "answer": "The window was broken.",
+          "explanation": "La voix passive se forme avec be au temps voulu + participe passé : « was made », « is spoken »."
+        }
+      ]
+    },
+    {
+      "id": "b2-3",
+      "title": "Expressions idiomatiques",
+      "category": "Structures et expressions",
+      "tip": "Une expression idiomatique ne se traduit pas mot à mot. « A piece of cake » désigne quelque chose de facile.",
+      "exercises": [
+        {
+          "id": "b2-3-1",
+          "type": "choice",
+          "prompt": "Que signifie « It's raining cats and dogs » ?",
+          "options": [
+            "Il pleut des cordes",
+            "Il neige beaucoup",
+            "Il fait très beau",
+            "Il y a beaucoup d'animaux"
+          ],
+          "answer": 0,
+          "explanation": "Une expression idiomatique ne se traduit pas mot à mot. « A piece of cake » désigne quelque chose de facile."
+        },
+        {
+          "id": "b2-3-2",
+          "type": "choice",
+          "prompt": "Que signifie « Break a leg! » ?",
+          "options": [
+            "Bonne chance !",
+            "Fais attention !",
+            "Repose-toi bien !",
+            "Dépêche-toi !"
+          ],
+          "answer": 0,
+          "explanation": "Une expression idiomatique ne se traduit pas mot à mot. « A piece of cake » désigne quelque chose de facile."
+        },
+        {
+          "id": "b2-3-3",
+          "type": "fill",
+          "prompt": "I'm exhausted — I'm going to hit the ___.",
+          "options": [
+            "sack",
+            "roof",
+            "road",
+            "wall"
+          ],
+          "answer": 0,
+          "explanation": "Une expression idiomatique ne se traduit pas mot à mot. « A piece of cake » désigne quelque chose de facile."
+        },
+        {
+          "id": "b2-3-4",
+          "type": "listen",
+          "prompt": "The exam was a piece of cake",
+          "options": [
+            "The exam was a piece of cake",
+            "The exam was a piece of work",
+            "The exam was not a piece of cake",
+            "The exam was a big piece of cake"
+          ],
+          "answer": 0,
+          "explanation": "Une expression idiomatique ne se traduit pas mot à mot. « A piece of cake » désigne quelque chose de facile."
+        },
+        {
+          "id": "b2-3-5",
+          "type": "order",
+          "prompt": "Traduisez : « Arrêtons-nous pour aujourd'hui. »",
+          "words": [
+            "Let's",
+            "call",
+            "it",
+            "a",
+            "day."
+          ],
+          "answer": "Let's call it a day.",
+          "explanation": "Une expression idiomatique ne se traduit pas mot à mot. « A piece of cake » désigne quelque chose de facile."
+        }
+      ]
+    }
+  ]
+}
