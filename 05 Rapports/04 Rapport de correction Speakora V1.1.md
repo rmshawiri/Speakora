@@ -98,4 +98,12 @@ Le nouveau test réel autorisé utilise la référence `SPEAKORA-V11-HTML-202609
 
 ## État final de livraison
 
-Application et serveur HTML : commit `4e230a4ded520bb2344c211e2b51daa45b65c0c0`, déploiement `dpl_4gQQv8mwukWv2WvPLdimnAgXMA1x`, état READY. Les commits de documentation/captures ultérieurs ne modifient pas ce code de production. Audit npm des dépendances de production : zéro vulnérabilité signalée. Le rapport de la suite finale contient 11 réussites et aucun échec.
+Application et serveur HTML : commit `9ae4b36c117bc522cd557677592f4e010fdc8d80`, déploiement `dpl_DYZEPrYqPAnbAGoh4TycdKDLQjV8`, état READY. Les commits de documentation/captures ultérieurs ne modifient pas ce code de production. Audit npm des dépendances de production : zéro vulnérabilité signalée. Le rapport de la suite finale contient 11 réussites et aucun échec.
+
+## 10. Révision du mail admin : composition centrée
+
+Suite au retour de l’utilisateur, le modèle a été repris pour suivre les règles fournies pour les e-mails Fluent Forms : conteneur centré de 640 px maximum, fond #F5F7FB, carte blanche arrondie et ombre légère, grand en-tête dégradé avec marque et slogan centrés, badge et titre centrés. Les coordonnées sont regroupées à gauche dans une carte #F8F7FF, avec labels violets et valeurs #111827. Le message possède son propre bloc à bordure mauve, suivi d’un conseil encadré et centré. La signature est centrée.
+
+Les styles demeurent entièrement inline, les tableaux et le repli Outlook sont conservés. Les tests de sécurité, les alternatives HTML/texte et les sujets restent inchangés. Vérification : 18 tests unitaires réussis et aperçus à 760/390 px, avec stress à 320 px pour 5 000 caractères. Le nouveau message de test autorisé porte la référence `SPEAKORA-V11-CENTRE-20260929` ; ses preuves et captures remplacent les aperçus de l’ancien modèle dans `Email V1.1`. La réception de l’ancien mail HTML a été confirmée par l’utilisateur avant cette révision.
+
+Révision centrée déployée et vérifiée : envoi réel accepté par SMTP le 29 septembre 2026 à 18 h 20 (Comores), réponse HTTP 200. Les captures ont été régénérées avec l’horodatage exact renvoyé par la production. Elles montrent le HTML envoyé, rendu dans Chromium ; elles ne sont pas présentées comme des captures natives Gmail/Outlook. La dernière modification concerne uniquement le modèle d’e-mail : les 11 tests navigateur de l’application restent ceux de la passe précédente, les 18 tests unitaires ont été rejoués avec succès après cette modification.
