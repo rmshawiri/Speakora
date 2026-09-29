@@ -20,6 +20,7 @@ test('landing SEO, exact CTA links, images, mobile menu and responsive',async({p
  for(const width of [320,360,390,768,1440]){await page.setViewportSize({width,height:900});await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
  await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Ouvrir le menu'}).click();await expect(page.locator('#navigation')).toHaveClass(/open/);await page.locator('#navigation').getByRole('link',{name:'FAQ',exact:true}).click();await expect(page.locator('#navigation')).not.toHaveClass(/open/);
  await page.locator('details').first().locator('summary').click();await expect(page.locator('details').first()).toHaveAttribute('open','');
+ for(const img of await page.locator('img').all()){await img.scrollIntoViewIfNeeded();await expect.poll(()=>img.evaluate((el:HTMLImageElement)=>el.complete&&el.naturalWidth>0)).toBe(true);}
  const broken=await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>!(i as HTMLImageElement).complete||!(i as HTMLImageElement).naturalWidth).length);expect(broken).toBe(0);expect(errors).toEqual([]);
 });
 test('lesson success, replay cap, theme, progress persistence and failure',async({page})=>{

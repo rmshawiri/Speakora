@@ -1,4 +1,6 @@
 import {createHmac,randomBytes,timingSafeEqual} from 'node:crypto';
+import addressparser from 'nodemailer/lib/addressparser';
+import {renderContactEmail,emailDate} from './contact-email.mjs';
 export const subjects=['Une question sur Speakora','Un problème technique','Une idée ou un retour','Un autre sujet'];
 export function validateContact(body){
  if(!body||typeof body!=='object'||Array.isArray(body))return null;
@@ -31,7 +33,10 @@ export function createLimiter(){
  };
 }
 export function smtpOptions(env){return {host:env.SMTP_HOST,port:Number(env.SMTP_PORT),secure:env.SMTP_SECURE==='true',requireTLS:true,auth:{user:env.SMTP_USER,pass:env.SMTP_PASSWORD},connectionTimeout:10000,greetingTimeout:10000,socketTimeout:15000,disableFileAccess:true,disableUrlAccess:true};}
-export function composeMessage(contact,env){return {from:env.SMTP_FROM,to:env.CONTACT_RECIPIENT,replyTo:{name:contact.name,address:contact.email},subject:`[Speakora] ${contact.subject}`,text:`Nouveau message depuis le formulaire Speakora\n\nNom : ${contact.name}\nE-mail : ${contact.email}\nSujet : ${contact.subject}\n\n${contact.message}\n\n— Formulaire de contact Speakora`};}
+export function composeMessage(contact,env,date=new Date()){
+ const address=addressparser(env.SMTP_FROM,{flatten:true})[0]?.address;if(!address)throw new Error('Invalid configured sender');
+ return {from:{name:'Speakora — MORA Shawiri',address},to:env.CONTACT_RECIPIENT,replyTo:{name:contact.name,address:contact.email},subject:`[Speakora] ${contact.subject}`,text:`Speakora\nApprenez. Pratiquez. Progressez.\n\nNouveau message depuis le formulaire Speakora\n\nNom : ${contact.name}\nE-mail : ${contact.email}\nSujet : ${contact.subject}\nDate : ${emailDate(date)}\n\nMessage :\n${contact.message}\n\nMessage envoyé depuis le formulaire de contact Speakora.\nSpeakora — Un produit MORA Shawiri`,html:renderContactEmail(contact,date)};
+}
 export function createHandler({env,send,now=Date.now}){
  const limit=createLimiter();const used=new Map();
  return async(req,res)=>{
@@ -55,7 +60,7 @@ export function createHandler({env,send,now=Date.now}){
   if(!limit(ip,now())){res.setHeader('Retry-After','600');return reply(429,'Vous avez envoyé plusieurs messages. Patientez dix minutes ou contactez-nous par e-mail.');}
   if(used.size>=15000)return reply(503,'Le formulaire est momentanément occupé. Réessayez plus tard.');
   used.set(body.token,now()+3600000);
-  try{const result=await send(composeMessage(contact,env));if(!result?.accepted?.length)throw new Error('not accepted');return reply(200,'Message transmis.');}
+  try{const sentAt=new Date(now());const result=await send(composeMessage(contact,env,sentAt));if(!result?.accepted?.length)throw new Error('not accepted');return res.status(200).json({message:'Message transmis.',sentAt:sentAt.toISOString()});}
   catch{used.delete(body.token);return reply(502,'Votre message n’a pas pu être transmis. Réessayez ou écrivez à contact@morashawiri.com.');}
  };
 }
