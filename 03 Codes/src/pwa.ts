@@ -1,8 +1,20 @@
 import { toast } from './core/ui';
-let installEvent: (Event & {prompt:()=>Promise<void>;userChoice:Promise<{outcome:string}>}) | null=null;
-export function refreshInstallButtons(){document.querySelectorAll<HTMLElement>('[data-install]').forEach(b=>b.hidden=!installEvent);}
-window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installEvent=e as typeof installEvent;document.querySelectorAll<HTMLElement>('[data-install]').forEach(b=>b.hidden=false);});
-document.addEventListener('click',async e=>{if((e.target as Element).closest('[data-install]')&&installEvent){await installEvent.prompt();await installEvent.userChoice;installEvent=null;document.querySelectorAll<HTMLElement>('[data-install]').forEach(b=>b.hidden=true);}});
+type InstallPrompt = Event & {prompt:()=>Promise<void>;userChoice:Promise<{outcome:string}>};
+declare global {interface Window {speakoraInstallation?:{event:InstallPrompt|null;installed:boolean}}}
+const standalone=window.matchMedia('(display-mode: standalone)');
+function isInstalled(){return !!window.speakoraInstallation?.installed || standalone.matches || !!(navigator as Navigator & {standalone?:boolean}).standalone;}
+export function refreshInstallButtons(){document.querySelectorAll<HTMLElement>('[data-install]').forEach(b=>b.hidden=isInstalled()||!window.speakoraInstallation?.event);}
+window.addEventListener('speakora:installationchange',refreshInstallButtons);
+standalone.addEventListener('change',refreshInstallButtons);
+document.addEventListener('click',async e=>{
+ if(!(e.target instanceof Element)||!e.target.closest('[data-install]')||isInstalled())return;
+ const state=window.speakoraInstallation;const prompt=state?.event;if(!state||!prompt)return;
+ // Consume this one-shot event before awaiting to prevent duplicate prompts.
+ state.event=null;refreshInstallButtons();
+ try{await prompt.prompt();const choice=await prompt.userChoice;if(choice.outcome==='accepted')state.installed=true;}
+ catch{/* A consumed or unavailable browser prompt must not leave a false install button. */}
+ finally{refreshInstallButtons();}
+});
 export function networkStatus(){document.querySelectorAll('[data-network]').forEach(el=>{el.textContent=navigator.onLine?'En ligne':'Hors connexion';});}
 window.addEventListener('online',networkStatus);window.addEventListener('offline',networkStatus);
 if('serviceWorker' in navigator && import.meta.env.PROD){
